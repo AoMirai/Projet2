@@ -3,6 +3,7 @@ import Description from './Description';
 import './Profil.css';
 import Banner from './Banner';
 import Playlist from './Playlist';
+import ContactArtist from './ContactArtist'
 
 //OBJET pour sumiler un affichage
 const fakeProfil = 
@@ -25,6 +26,7 @@ render(){
       je n'appelle que l'element description */}
     <Description description = {fakeProfil.description}/>
     <Playlist />
+    <ContactArtist />
     </div>
   )
 }
