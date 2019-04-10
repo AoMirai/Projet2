@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Description from './Description';
 import './Profil.css';
 import Banner from './Banner';
+import Playlist from './Playlist';
 
 //OBJET pour sumiler un affichage
 const fakeProfil = 
@@ -19,9 +20,11 @@ render(){
   return (
     <div className="Profil">
     <Banner />
+    
     {/*Comme mon fakeProfil est un objet, et que je n'ai besoin que de l'element description pour le composant Description, 
       je n'appelle que l'element description */}
     <Description description = {fakeProfil.description}/>
+    <Playlist />
     </div>
   )
 }
