@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+.footer {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #172d2b;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+}
+
+.text-center {
+    margin-top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.adress {
+    margin-top: 2%;
+}
+
+.link {
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: white;    
+}
+
+a:hover {
+    color: white;
+}
+
+.TiWorldOutline {
+    margin-bottom: 2px;
+}
