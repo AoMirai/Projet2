@@ -4,7 +4,7 @@ import "./Footer.css";
 
 function Footer(props) {
     return(
-        <div className="footer">
+        <div className="Footer">
             <div className="container">
                 <div className="row">
                     <div className="link col-4">
