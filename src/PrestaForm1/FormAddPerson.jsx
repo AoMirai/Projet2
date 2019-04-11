@@ -10,7 +10,7 @@ class FormAddPerson extends React.Component {
     };
   }
 
-  handleShareholderNameChange = idx => evt => {
+  handleShareholderNameChange = (idx, evt) => {
     const newShareholders = this.state.shareholders.map((shareholder, sidx) => {
       if (idx !== sidx) return shareholder;
       return { ...shareholder, name: evt.target.value };
@@ -25,7 +25,7 @@ class FormAddPerson extends React.Component {
     });
   };
 
-  handleRemoveShareholder = idx => () => {
+  handleRemoveShareholder = (idx, ) => {
     this.setState({
       shareholders: this.state.shareholders.filter((s, sidx) => idx !== sidx)
     });
@@ -33,45 +33,44 @@ class FormAddPerson extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="Add">
-        <div class="container">
-          <h4>Membres</h4>
+      <div className="FormAddPerson">
+        <form onSubmit={this.handleSubmit} className="Add">
+          <div class="container">
+            <h4>Membres</h4>
 
-          {this.state.shareholders.map((shareholder, idx) => (
-            <div className="shareholder">
-              <input
-                type="text"
-                className="text"
-                placeholder={`Nom et prénom du membre ${idx + 1}`}
-                value={shareholder.name}
-                onChange={this.handleShareholderNameChange(idx)}
-              />
-              <button
-                type="button"
-                onClick={this.handleRemoveShareholder(idx)}
-                className="small"
-              >
-                -
-              </button>
-            </div>
-          ))}
+            {this.state.shareholders.map((shareholder, idx) => (
+              <div className="shareholder">
+                <input
+                  type="text"
+                  className="text"
+                  placeholder={`Nom et prénom du membre ${idx + 1}`}
+                  value={shareholder.name}
+                  onChange={(evt) => this.handleShareholderNameChange(idx, evt)}
+                />
+                <button
+                  type="button"
+                  onClick={() => this.handleRemoveShareholder(idx, )}
+                  className="small"
+                >
+                  -
+                </button>
+              </div>
+            ))}
 
-          <button
-            type="button"
-            onClick={this.handleAddShareholder}
-            className="Addmember"
-          >
-            {" "}
-            +{" "}
-          </button>
-        </div>
-        <button className="next">Suivant</button>
-      </form>
+            <button
+              type="button"
+              onClick={this.handleAddShareholder}
+              className="Addmember"
+            >
+              {" "}
+              +{" "}
+            </button>
+          </div>
+          <button className="next">Suivant</button>
+        </form>
+      </div>
     );
   }
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<FormAddPerson />, rootElement);
 
 export default FormAddPerson;

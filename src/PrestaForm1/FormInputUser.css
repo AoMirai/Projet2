@@ -1,11 +1,7 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #F5F5F5;
-  }
-
-  
-
-.bloc-input {
+.FormInputUser .App {
+  background-color: #F5F5F5;
+}
+.FormInputUser .bloc-input {
   border-radius: 5px;
   border: 3px solid #E5E8E8;
   padding:40px;
@@ -13,12 +9,12 @@ body {
 }
 
   
-  form {
+.FormInputUser form {
     padding: 0 40px;
     margin :5%;
   }
   
-  form input {
+.FormInputUser   form input {
     width: 100%;
     font-size: 20px;
     padding: 5px 10px;

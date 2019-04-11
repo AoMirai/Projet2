@@ -1,4 +1,4 @@
-  form button {
+  .FormAddPerson form button {
     border-radius: 5px;
     background-color: #f0673d;
     color: #fff;
@@ -7,11 +7,11 @@
     margin-top: 30px;
   }
   
-  form button:hover {
+  .FormAddPerson form button:hover {
     background-color:#f0673d;
   }
   
-  form button.small {
+  .FormAddPerson form button.small {
     border-radius:50px;
     padding: 0 20px;
     width :15px;
@@ -20,30 +20,30 @@
     text-align:center;
   }
   
-  .container {
+  .FormAddPerson .container {
     border-radius: 5px;
     border: 3px solid #E5E8E8;
     padding: 0;
     background-color:white;
   }
   
-  .text {
+  .FormAddPerson .text {
     text-align: center;
     max-width: 80%;
   }
   
-  .next {
+  .FormAddPerson .next {
     background-color: #777;
     width:155px;
     color:white;
   }
 
-  .Add {
+  .FormAddPerson .Add {
     padding: 0;
     margin: 0;
   }
 
-  .Addmember {
+  .FormAddPerson .Addmember {
     min-width: 5%;
     font-size: 24px;
     font-weight: bold;

@@ -3,12 +3,12 @@
     margin-top: 2%;
 }
 
-.ImgGuide {
+.Formplaylist .ImgGuide {
     height: 35%;
     width: 45%;
 }
 
-.Uri {
+.Formplaylist .Uri {
     display: inline-block;
     min-width: 50%;
     margin-top: 1%;
