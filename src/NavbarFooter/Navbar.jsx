@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../image/lg.png'
 import {
   Collapse,
   Navbar,
@@ -33,7 +32,7 @@ export default class Navigation extends React.Component {
     return (
       <div className= "Navigation">
         <Navbar color="light" light expand="md">
-          <img src = {Logo} className="Logo" alt ="logo"/>   
+          <img src='/image/lg.png'  className="Logo" alt ="logo"/>   
           <NavbarBrand href="/">Digg'n Share</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
