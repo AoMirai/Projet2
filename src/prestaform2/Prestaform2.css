@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.Prestaform2 {
+    background-color: #F5F5F5;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Send {
+    margin-bottom: 2%;
+    background-color: #f0673d;
+    border: none;
+    width: 155px;
+}

@@ -1,0 +1,15 @@
+.Formplaylist {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.ImgGuide {
+    height: 275px;
+    width: 325px;
+}
+
+.Uri {
+    display: inline-block;
+    min-width: 50%;
+    text-align: left;
+}
