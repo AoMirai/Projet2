@@ -1,0 +1,26 @@
+.Formbanner {
+    justify-content: space-around;
+    border-bottom: solid 3px #E5E8E8;
+    margin: 0;
+    padding: 0;
+}
+
+.Importimage{
+    margin-left: 2%;
+    padding-top: 2%;
+    display: inline-block;
+}
+
+.NameStyle {
+    margin-left: 2%;
+    margin-top: 2%;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.InputNameStyle {
+    display: inline-block;
+    min-width: 50%;
+    text-align: left;
+}

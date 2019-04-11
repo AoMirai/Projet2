@@ -6,7 +6,7 @@ import './PrestaForm.css'
 class PrestaForm extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Prestaform">
         <FormSlide />
         <FormInputUser />
       </div>

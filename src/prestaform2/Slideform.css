@@ -1,22 +1,21 @@
 .slide { 
     margin:20px;
+    margin-top: 0;
   }
-  
-  .slide1-1 {
+  .slide1 {
     margin:20px;
     border-radius:50% !important;
     background-color:#43AF3E;
     color:white;
   }
-  
-  .slide1-2 {
+  .slide2 {
     margin:20px;
     border-radius:50% !important;
     color:white;
-    background-color:#777;
+    background-color:#43AF3E;
   }
-  
   .pagination {
     justify-content: center;
     margin:30px;
+    margin-top: 0;
   }

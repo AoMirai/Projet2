@@ -1,18 +1,18 @@
 import React from 'react';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import './FormSlide.css'
+import './Slideform.css';
 
-export default class FormSlide extends React.Component {
+export default class Slideform extends React.Component {
   render() {
     return (
-      <Pagination size="lg" className="slide" aria-label="Page slide">
+      <Pagination size="lg" className="slide" aria-label="nav formslide">
         <PaginationItem>
-          <PaginationLink className="slide1-1" href="#">
+          <PaginationLink className="slide1" href="#">
             1
           </PaginationLink>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink className="slide1-2" href="#">
+          <PaginationLink className="slide2" href="#">
             2
           </PaginationLink>
         </PaginationItem>
