@@ -1,14 +1,28 @@
 import React, {Component} from 'react';
-import Description from './Description';
-import './Profil.css';
 import Banner from './Banner';
+import Description from './Description';
+import Planning from './Planning';
 import Playlist from './Playlist';
 import Example from './ContactArtist';
 
 
+import './Profil.css';
 
 
-//OBJET pour sumiler un affichage
+// Normalement ça change les boutons mais ça le fait pas...
+let messages = {
+  allDay: 'journée',
+  previous: 'précédent',
+  next: 'suivant',
+  today: 'aujourd\'hui',
+  month: 'mois',
+  week: 'semaine',
+  day: 'jour',
+  agenda: 'Agenda',
+  date: 'date',
+  time: 'heure',
+}
+//OBJET pour simuler un affichage
 const fakeProfil = 
   {
     name: 'Coucou', 
@@ -24,13 +38,11 @@ render(){
   return (
     <div className="Profil">
     <Banner />
-    
-    {/*Comme mon fakeProfil est un objet, et que je n'ai besoin que de l'element description pour le composant Description, 
-      je n'appelle que l'element description */}
     <Description description = {fakeProfil.description}/>
     <Playlist />
+    <Planning messages={messages}/>
     <Example/>
-    
+  
     </div>
   )
 }
