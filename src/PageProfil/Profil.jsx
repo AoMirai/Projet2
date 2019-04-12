@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Banner from './Banner';
 import Description from './Description';
-import Planning from './Planning';
 import Playlist from './Playlist';
 import ContactA from './ContactArtist';
 
@@ -40,7 +39,6 @@ render(){
     <Banner />
     <Description description = {fakeProfil.description}/>
     <Playlist />
-    <Planning messages={messages}/>
     <ContactA/>
   
     </div>
