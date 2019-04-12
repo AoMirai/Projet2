@@ -8,7 +8,7 @@ class Banner extends Component {
 
         <div className="Banner">
             <div class="image">
-                <img src='image/band.jpg' className='band' alt= "band"/>
+                <img src='/image/band.jpg' className='band' alt= "band"/>
             </div>
             <ul>
             <li>NOM DU GROUPE</li>
