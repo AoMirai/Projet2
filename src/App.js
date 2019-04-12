@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Profil from'./Profil'
-
-import React, { Component } from 'react'; 
 import './App.css';
 import Navigation from './NavbarFooter/Navbar';
 import Footer from './NavbarFooter/Footer';

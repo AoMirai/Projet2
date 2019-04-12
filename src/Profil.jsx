@@ -3,7 +3,7 @@ import Banner from './Banner';
 import Description from './Description';
 import Planning from './Planning';
 import Playlist from './Playlist';
-import Example from './ContactArtist';
+import ContactA from './ContactArtist';
 
 
 import './Profil.css';
@@ -41,7 +41,7 @@ render(){
     <Description description = {fakeProfil.description}/>
     <Playlist />
     <Planning messages={messages}/>
-    <Example/>
+    <ContactA/>
   
     </div>
   )

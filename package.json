@@ -12,7 +12,8 @@
     "react-dom": "^16.8.6",
     "react-icons": "^3.5.0",
     "react-scripts": "2.1.8",
-    "reactstrap": "^8.0.0"
+    "reactstrap": "^8.0.0",
+    "react-social-icons": "^4.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,8 +29,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "react-social-icons": "^4.1.0"
-  }
+  ]
 }

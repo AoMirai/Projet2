@@ -10,14 +10,9 @@ const localizer = BigCalendar.momentLocalizer(moment)
 
 
 class Planning extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     date: new Date(2019, 4, 10),
-  //   }
-  // }
+ 
   render() {
-    const {messages} = this.props
+    
     return (
       <div className="Planning">
         <BigCalendar
