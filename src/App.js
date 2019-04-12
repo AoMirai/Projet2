@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 
+import React, { Component } from 'react'; 
 import './App.css';
 import Navigation from './NavbarFooter/Navbar';
 import Footer from './NavbarFooter/Footer';
@@ -11,8 +11,8 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Footer />
-
       </div>
+      
     );
   }
 }
