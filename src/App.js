@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import Profil from'./Profil';
+import Profil from'./Profil'
+
+import React, { Component } from 'react'; 
 import './App.css';
+import Navigation from './NavbarFooter/Navbar';
+import Footer from './NavbarFooter/Footer';
+
 
 
 
@@ -8,10 +13,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Profil/>
-        
+        <Navigation />
+        <Footer />
       </div>
-
     );
   }
 }

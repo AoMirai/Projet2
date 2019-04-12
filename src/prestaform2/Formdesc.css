@@ -1,0 +1,12 @@
+.Formdesc {
+    margin-left: 2%;
+}
+
+.Formdesc .form-group {
+    display: inline-block;
+    min-width: 50%;
+}
+
+.Formdesc .textarea .form-control {
+    height: 200px;
+}
