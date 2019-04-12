@@ -1,0 +1,53 @@
+.Planning {
+  width: 95vw;
+  height: 90vw;
+  margin: 2.5vw;
+  font-size : 12px;
+}
+.Planning .rbc-toolbar{
+  width: 95vw;
+  justify-content: space-evenly;
+  font-size : 4w;
+}
+.Planning .rbc-toolbar .rbc-btn-group button{
+  padding: 0.5vw 1vw;
+}
+.Planning .rbc-toolbar .rbc-toolbar-label{
+  width : 11.5vw;
+  flex-grow: 0.4;
+}
+.Planning .rbc-toolbar :nth-child(4) {
+  display: none;
+}
+.Planning .rbc-calendar, .rbc-toolbar {
+  width: 100%;
+}
+
+
+@media(min-width:576px){
+.Planning{
+  height: 60vw;
+  
+}
+}
+@media(min-width:768px){
+  .Planning{
+    height: 60vw;
+    width: 54vw;
+    right: 2.5vw;
+    
+  }
+  
+}
+@media(min-width:992px){
+  .Planning{
+    height: 50vw;
+    width: 50vw;
+  }
+}
+@media(min-width:1200px){
+  .Planning{
+    height: 45vw;
+    width: 45vw;
+  }
+}
