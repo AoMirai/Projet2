@@ -12,3 +12,14 @@
     width: 50px;
     margin: 20px;
 }
+
+.Navigation .link {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.Navigation .link:hover {
+    color: rgba(0,0,0,.6);
+}

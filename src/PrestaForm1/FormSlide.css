@@ -1,5 +1,6 @@
 .FormSlide .slide { 
     margin:20px;
+    margin-top: 0;
   }
   
 .FormSlide .slide1 {
@@ -19,4 +20,9 @@
 .FormSlide .pagination {
     justify-content: center;
     margin:30px;
+    margin-top: 0;
+  }
+
+  .FormSlide .link {
+    text-decoration: none;
   }
