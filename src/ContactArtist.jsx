@@ -16,9 +16,9 @@ class Example extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ContactArtist">
           
-        <Button color="primary" onClick={this.toggle} style={{ marginBottom: '5rem' }}>Contact Artist</Button>
+        <Button className="button-contact" color="primary" onClick={this.toggle} style={{ marginBottom: '5rem' }}>Contact Artist</Button>
         <Collapse isOpen={this.state.collapse}>
         
           <Card>
@@ -26,7 +26,7 @@ class Example extends Component {
               <h1>Contactez les !!!</h1>
               </div>
             <CardBody>
-                <div id="text">
+                <div className="text">
                 <FormGroup>
                     <Label for="exampleText">Votre Message</Label>
                     <Input type="textarea" name="text" id="exampleText" />
@@ -36,12 +36,12 @@ class Example extends Component {
 
              
             </CardBody>
-            <div buttonsend>
-        <Button color="primary" size="lg">Send</Button>{' '}
+            <div >
+        <Button className="button-send"color="primary" size="lg">Send</Button>{' '}
         </div>
           </Card>
         </Collapse>
-        <hr></hr>
+        
       </div>
 
       
