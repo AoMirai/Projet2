@@ -1,0 +1,25 @@
+.Slideform .slide { 
+    margin:20px;
+    margin-top: 0;
+  }
+.Slideform .slide1 {
+    margin:20px;
+    border-radius:50% !important;
+    background-color:#43AF3E;
+    color:white;
+  }
+.Slideform .slide2 {
+    margin:20px;
+    border-radius:50% !important;
+    color:white;
+    background-color:#43AF3E;
+  }
+.Slideform .pagination {
+    justify-content: center;
+    margin:30px;
+    margin-top: 0;
+  }
+
+  .Slideform .link {
+    text-decoration: none;
+  }

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.Navigation .navbar-brand {
+   font-family: 'Open Sans', sans-serif;
+}
+
+.Navigation .ml-auto {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Navigation .Logo {
+    width: 50px;
+    margin: 20px;
+}
+
+.Navigation .link {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.Navigation .link:hover {
+    color: rgba(0,0,0,.6);
+}
