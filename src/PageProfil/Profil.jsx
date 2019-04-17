@@ -9,18 +9,6 @@ import './Profil.css';
 
 
 // Normalement ça change les boutons mais ça le fait pas...
-let messages = {
-  allDay: 'journée',
-  previous: 'précédent',
-  next: 'suivant',
-  today: 'aujourd\'hui',
-  month: 'mois',
-  week: 'semaine',
-  day: 'jour',
-  agenda: 'Agenda',
-  date: 'date',
-  time: 'heure',
-}
 //OBJET pour simuler un affichage
 const fakeProfil = 
   {
