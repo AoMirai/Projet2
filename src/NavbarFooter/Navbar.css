@@ -22,7 +22,7 @@
 .Navigation .link:hover {
     color: rgba(0,0,0,.6);
 }
-.selected {
+.Navigation .active {
     color: white;
     background-color: #808080;
 }
