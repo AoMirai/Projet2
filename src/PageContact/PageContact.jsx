@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import FormContact from './FormContact';
 
 class PageContact extends Component {
-    render(){
+    render() {
         return(
-        <FormContact />
+            <FormContact />
         )
     }
-
-
 }
-
 
 export default PageContact;
