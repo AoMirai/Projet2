@@ -6,7 +6,6 @@ class Historique extends Component {
     render(){
         return(
             <div className="Historique">
-            <Navigate/>
             <p>L'historique de session</p>
             </div>
 

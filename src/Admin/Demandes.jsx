@@ -5,7 +5,6 @@ class Demandes extends Component {
     render(){
         return(
             <div className="Demandes">
-            <Navigate />
             <p>Les premieres Demandes</p>
             </div>
 
