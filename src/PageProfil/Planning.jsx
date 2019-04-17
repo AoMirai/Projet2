@@ -12,7 +12,7 @@ const localizer = BigCalendar.momentLocalizer(moment)
 class Planning extends Component {
  
   render() {
-    
+    const {messages} = this.props;
     return (
       <div className="Planning">
         <BigCalendar
@@ -28,6 +28,7 @@ class Planning extends Component {
           startAccessor="start"
           endAccessor="end"
           culture='fr'
+          messages= {messages}
         />
       </div>
     );

@@ -1,26 +1,11 @@
 import React, {Component} from 'react';
 import Banner from './Banner';
 import Description from './Description';
-import Playlist from './Playlist';
+import Medias from './Medias.jsx'
 import ContactA from './ContactArtist';
-
 
 import './Profil.css';
 
-
-// Normalement ça change les boutons mais ça le fait pas...
-let messages = {
-  allDay: 'journée',
-  previous: 'précédent',
-  next: 'suivant',
-  today: 'aujourd\'hui',
-  month: 'mois',
-  week: 'semaine',
-  day: 'jour',
-  agenda: 'Agenda',
-  date: 'date',
-  time: 'heure',
-}
 //OBJET pour simuler un affichage
 const fakeProfil = 
   {
@@ -38,7 +23,7 @@ render(){
     <div className="Profil">
     <Banner />
     <Description description = {fakeProfil.description}/>
-    <Playlist />
+    <Medias/>
     <ContactA/>
   
     </div>
