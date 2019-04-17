@@ -3,7 +3,7 @@ import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import './Planning.css'
-import '../node_modules/moment/locale/fr.js';
+import '../../node_modules/moment/locale/fr.js';
 
 moment.locale('fr');
 const localizer = BigCalendar.momentLocalizer(moment)

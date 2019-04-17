@@ -5,7 +5,7 @@ class Playlist extends Component {
     render() {
       return (
         
-        <div className="playlist">
+        <div className="Playlist">
         <iframe src="https://open.spotify.com/embed?uri=spotify:artist:3JVssppENfMD50NXuCF8Wk" ></iframe>
         </div>
         
