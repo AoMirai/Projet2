@@ -1,0 +1,11 @@
+.Artist {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Artist > img {
+    width: 200px;
+    height:200px;
+}
