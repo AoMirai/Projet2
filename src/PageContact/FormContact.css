@@ -1,0 +1,20 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 12px;
+    margin-left: 30px;
+    margin-right:30px;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 5%;
+}
+
+
+.Form .button {
+    text-align: center;
+    color: blue
+}
