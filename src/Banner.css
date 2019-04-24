@@ -1,0 +1,35 @@
+.Banner {
+    border-radius: 10px;
+    border-width:2px;
+    border:1px solid rgba(197, 19, 19, 0.836);
+    padding:50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-width:6px;
+    display: flex;
+    background-image: linear-gradient(to left top, #090c0f, #1c1f3b, #542257, #970351, #c61027);
+  }
+  
+.Banner h1 {
+    color: blue;
+    
+  }
+      
+
+.Banner  li{
+    font-size:27px;
+    line-height: 85px;
+    color: rgb(252, 173, 4);
+    list-style:none;
+  
+  }
+
+.Banner ul{
+    margin-left: 23%;
+    float:right;
+  }
+  
+.Banner .image{
+    border-width:2px;
+  } 
+  

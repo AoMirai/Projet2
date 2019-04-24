@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./FormAddPerson.css";
 
 class FormAddPerson extends React.Component {
@@ -66,7 +65,6 @@ class FormAddPerson extends React.Component {
               +{" "}
             </button>
           </div>
-          <button className="next">Suivant</button>
         </form>
       </div>
     );

@@ -1,0 +1,78 @@
+.ContactArtist .button-contact {
+    font-size: 28px;
+    color: rgb(252, 173, 4);
+    background-image: linear-gradient(to left top, #090c0f, #1c1f3b, #542257, #970351, #c61027);
+    border-color: rgb(255, 42, 5);
+    background-color: blue;
+    width: 26%;
+    border:6px solid rgb(235, 17, 2);
+    border-radius:7px;
+    padding:2px;
+    left: 8%; 
+    margin-left: 23%;
+    
+}
+
+
+.ContactArtist .card-body{
+    border-radius: 10px;
+    border-width:2px;
+    border:1px solid rgba(197, 19, 19, 0.836);
+    padding:50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-width:6px;
+    display: flex;
+    background-image: linear-gradient(to left top, #090c0f, #1c1f3b, #542257, #970351, #c61027);
+    color: yellow;
+    
+}
+
+.ContactArtist .text {
+    margin: 0 auto;
+    font-size: 155%;
+    width: 75%;
+}
+
+
+
+
+
+.ContactArtist .contactez h1{
+    text-align: center;
+
+    color: crimson;
+}
+
+.ContactArtist .btn-primary{ 
+    margin-left: 5%;
+    margin-top: 4%;
+    
+}
+
+.ContactArtist .button-send {
+    font-size: 28px;
+    color: rgb(252, 173, 4);
+    background-image: linear-gradient(to left top, #090c0f, #1c1f3b, #542257, #970351, #c61027);
+    border-color: rgb(255, 42, 5);
+    background-color: blue;
+    border:6px solid rgb(235, 17, 2);
+    border-radius:7px;
+    text-align: center;
+    width: 6em;
+    
+}
+
+.ContactArtist .btn-group-lg .btn, .btn-lg{
+  position: absolute;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  margin-top:20px;
+}
+
+
+
+.ContactArtist .FormGroup {
+    width: 12%;
+}
