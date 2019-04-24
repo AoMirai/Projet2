@@ -11,10 +11,28 @@
     margin-left:10%;
     margin-right:10%;
     margin-top: 5%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 12%;
 }
 
 
-.Form .button {
+.Form .buton {
     text-align: center;
     color: blue
+}
+
+.Form .a {
+    padding-right: 62%;
+    
+}
+
+.Form .b {
+    padding-right: 46%;
+}
+
+.Form .c {
+    padding-right: 23%;
 }
