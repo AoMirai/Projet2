@@ -61,24 +61,33 @@ import Demande from './Demande'
 
 
 class Demandes extends Component {
-    constructor(props)
-{
-    super(props);
-    this.state = {
-        demandes: [],
+    constructor(props) {
+        super(props);
+        this.state = {
+            demandes: [],
+        }
     }
-}    
-componentDidMount() {
-    const demandes = this.state.demandes
+    componentDidMount() {
+        const demandes = this.state.demandes
         fetch("http://51.68.18.101:3002/diggnshare/api/recipients")
             .then(response => response.json())
             .then(demandes => {
                 this.setState({
-                    demandes, 
+                    demandes,
                 })
             })
-            console.log(demandes)
+        console.log(demandes)
     }
+
+supprProfil(id){
+    const config = {
+        method: "DELETE"
+      };
+    const url = "http://51.68.18.101:3002/diggnshare/api/recipients";
+fetch(url + '/' + id, config)
+.then(response => response.json());
+}
+
     render() {
         const demandes = this.state.demandes
         console.log(demandes)
@@ -86,9 +95,9 @@ componentDidMount() {
             <div className="Demandes">
                 <p>Les dernières Demandes</p>
                 {console.log(demandes)}
-                    {demandes.map((demande, index) => 
-                         <Demande key={index} demande={demande}/> 
-                    )
+                {demandes.map((demande, index) =>
+                    <Demande key={index} demande={demande} supprProfil={this.supprProfil}/>
+                )
                 }
             </div>
         )

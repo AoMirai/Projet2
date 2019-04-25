@@ -49,8 +49,8 @@ class Demande extends Component {
               
             </div>
             <div className="buttons">
-              <button className="accepter">Accepter</button>
-              <button className="refuser">Refuser</button>
+              <button className="accepter" href={`http://campus-bordeaux.ovh/diggn-share/profil/${this.props.demande.id}`} >Accepter</button>
+              <button className="refuser" onClick={this.props.supprProfil}>Refuser</button>
             </div>
           </div>
 
