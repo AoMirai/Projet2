@@ -4,9 +4,9 @@ import Artist from "./Artist";
 class Artists extends Component {
   render() {
     return (
-      <div className="Artists row justify-content-center">
+      <div className="Artists row">
         {this.props.artists.map(artist => (
-          <Artist key={artist.id} photo={artist.photo} name={artist.name} style={artist.style} />
+          <Artist key={artist.id} photo={artist.photo} name={artist.name} style={artist.style} className="col-12"/>
         ))}
       </div>
     );

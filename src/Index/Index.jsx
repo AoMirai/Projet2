@@ -32,7 +32,7 @@ class Index extends Component {
 
 
     render() {
-        const filteredArtists = this.state.artists.filter(artist => artist.name.toLowerCase().includes(this.state.text)|| artist.style.toLowerCase().includes(this.state.text))
+        const filteredArtists = this.state.artists.filter(artist => artist.name.toLowerCase().includes(this.state.text.toLocaleLowerCase())|| artist.style.toLowerCase().includes(this.state.text.toLocaleLowerCase()))
         return (
             <div className="Index">
                 <Search text={this.state.text} change={this.onChangeSearch} />
