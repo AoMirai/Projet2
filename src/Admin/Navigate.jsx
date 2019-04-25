@@ -1,28 +1,26 @@
 import React from 'react';
 import { Nav, NavItem } from 'reactstrap';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Navigate.css'
 
 export default class Navigate extends React.Component {
   render() {
     return (
       <div className="Navigate"> 
-        <p>List Based</p>
         <Nav vertical>
           <NavItem>
-            <Link to="/admin/semaine">Semaine</Link>
+            <NavLink className="link" activeClassName to="/admin/semaine">Semaine</NavLink>
           </NavItem>
           <NavItem>
-            <Link to="/admin/signalements">Signalements</Link>
+            <NavLink className="link" activeClassName to="/admin/signalements">Signalements</NavLink>
           </NavItem>
           <NavItem>
-            <Link to="/admin/demandes">Demandes</Link>
+            <NavLink className="link" activeClassName to="/admin/demandes">Demandes</NavLink>
           </NavItem>
           <NavItem>
-            <Link to="/admin/historique">Historique</Link>
+            <NavLink className="link" activeClassName to="/admin/historique">Historique</NavLink>
           </NavItem>
         </Nav>
-        <hr />
       </div>
     );
   }
