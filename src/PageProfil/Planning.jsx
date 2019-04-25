@@ -19,11 +19,27 @@ class Planning extends Component {
           localizer={localizer}
           events={[
             {
-              'title': 'My event',
+              'title': 'Dejeuner chez X',
               'allDay': false,
-              'start': new Date(2019, 3, 10, 10, 0), // 10.00 AM
-              'end': new Date(2019, 3, 10, 14, 0), // 2.00 PM 
-            }
+              'start': new Date(2019, 3, 24, 10, 0),
+              'end': new Date(2019, 3, 24, 14, 0),
+            },{
+              'title': 'Soirée chez Y',
+              'allDay': false,
+              'start': new Date(2019, 3, 25, 18, 0), 
+              'end': new Date(2019, 3, 25, 23, 59), 
+            },{
+              'title': 'Soirée chez Y',
+              'allDay': false,
+              'start': new Date(2019, 3, 26, 0, 0), 
+              'end': new Date(2019, 3, 26, 2, 0), 
+            },{
+              'title': 'Non Dispo',
+              'allDay': false,
+              'start': new Date(2019, 3, 26, 2, 0), 
+              'end': new Date(2019, 3, 26, 18, 0), 
+            },
+        
           ]}
           startAccessor="start"
           endAccessor="end"

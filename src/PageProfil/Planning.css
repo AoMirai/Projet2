@@ -23,11 +23,11 @@
 }
 
 .Planning .rbc-today {
-  background-color: yellow;
+  background-color: rgba(122, 243, 122, 0.363)
 }
 
 .Planning .rbc-now > a{
-  color:red
+  color: rgb(187, 78, 15)
 }
 
 .Planning .rbc-btn-group, .Planning .rbc-time-view, .Planning .rbc-month-view, .Planning .rbc-agenda-view {
