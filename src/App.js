@@ -70,12 +70,12 @@ class App extends Component {
         if (res.error) {
           alert(res.error);
         } else {
-          alert(`Votre film à été ajouté avec l'ID ${res}!`);
+          alert(`Votre prestation à été enregistrée correctement!`);
         }
       })
       .catch(e => {
         console.error(e);
-        alert("Erreur lors de l'ajout de votre film.");
+        alert("Erreur lors de l'ajout de votre prestation.");
       });
   }
 
