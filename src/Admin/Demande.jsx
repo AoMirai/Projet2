@@ -14,6 +14,16 @@ class Demande extends Component {
   toggle() {
     this.setState(state => ({ collapse: !state.collapse }));
   }
+
+  supprProfil(id){
+    const config = {
+        method: "DELETE"
+      };
+    const url = "http://51.68.18.101:3002/diggnshare/api/recipients";
+fetch(url + '/' + id, config)
+.then(response => response.json());
+}
+
   render() {
     return (
 
@@ -50,7 +60,7 @@ class Demande extends Component {
             </div>
             <div className="buttons">
               <button className="accepter" href={`http://campus-bordeaux.ovh/diggn-share/profil/${this.props.demande.id}`} >Accepter</button>
-              <button className="refuser" onClick={this.props.supprProfil}>Refuser</button>
+              <button className="refuser" onClick={this.supprProfil(this.props.demande.id)}>Refuser</button>
             </div>
           </div>
 
