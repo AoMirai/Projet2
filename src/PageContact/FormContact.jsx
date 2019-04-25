@@ -29,7 +29,7 @@ const FormContact = (props) => {
           <Label for="exampleText">Votre Commentaire :</Label>
           <Input type="Votre Commentaire :" name="text" id="exampleText" />
         </FormGroup>
-        <div className="buton"><Button color="primary">primary</Button>{' '}</div>
+        <div className="buton"><Button color="primary">Send</Button>{' '}</div>
     </div>
     
   )
