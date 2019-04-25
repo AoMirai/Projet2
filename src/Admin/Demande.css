@@ -4,11 +4,25 @@
 }
 
 .Demande img {
-  width: 20vw
+  width: 20%;
 }
 
 .Demande .banner, .Demande .descr-play{
-
   display: flex;
   justify-content: flex-start;
+  margin: 10px;
+}
+.Demande .buttons {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Demande .accepter {
+  background-color: green;
+  color : white;
+}
+
+.Demande .refuser {
+  background-color: red;
+  color : white;
 }

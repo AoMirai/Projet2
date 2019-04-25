@@ -6,7 +6,9 @@ class Demande extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    this.state = { collapse: false };
+    this.state = { 
+      collapse: false, 
+    };
   }
 
   toggle() {
@@ -46,7 +48,10 @@ class Demande extends Component {
             <iframe title={this.props.demande.name} width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
               
             </div>
-            
+            <div className="buttons">
+              <button className="accepter">Accepter</button>
+              <button className="refuser">Refuser</button>
+            </div>
           </div>
 
         </Collapse>
