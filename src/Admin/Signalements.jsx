@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Navigate from './Navigate';
 
 class Signalements extends Component {
     render(){

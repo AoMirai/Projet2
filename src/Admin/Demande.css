@@ -1,3 +1,14 @@
 .Demande {
   padding: 5px;
+  border: solid 1px black;
+}
+
+.Demande img {
+  width: 20vw
+}
+
+.Demande .banner, .Demande .descr-play{
+
+  display: flex;
+  justify-content: flex-start;
 }
