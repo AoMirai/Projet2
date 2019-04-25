@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <Navigation />
+          <Navigation/>
           <Switch>
             <Route exact path="/"/>
             <Route path="/newpresta/1" component={Prestaform1} />
