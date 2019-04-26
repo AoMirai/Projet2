@@ -5,8 +5,6 @@ import Medias from './Medias.jsx'
 import ContactA from './ContactArtist';
 
 import './Profil.css';
-
-//OBJET pour simuler un affichage
 const fakeProfil = 
   {
     name: 'Coucou', 
