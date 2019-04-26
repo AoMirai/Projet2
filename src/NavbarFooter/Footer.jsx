@@ -12,10 +12,10 @@ function Footer(props) {
                         <h5>Nos liens</h5>
                         <ul className="list-unstyled">
                             <Link  to="/">Acceuil</Link>
-                            <li><a href=" ">Artistes</a></li>
-                            <li><a href=" ">Nous Contacter</a></li>
-                            <li><a href=" ">Se Connecter</a></li>
-                            <li><a href=" ">Conditions Générales d'Utilisation</a></li>
+                            <li><a href="#">Artistes</a></li>
+                            <li><a href="#">Nous Contacter</a></li>
+                            <li><a href="#">Se Connecter</a></li>
+                            <li><a href="#">Conditions Générales d'Utilisation</a></li>
                         </ul>
                     </div>
                     <div className="adress col-4">
