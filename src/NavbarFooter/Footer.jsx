@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
 import "./Footer.css";
 
@@ -11,11 +11,11 @@ function Footer(props) {
                     <div className="link col-4">
                         <h5>Nos liens</h5>
                         <ul className="list-unstyled">
-                            <Link  to="/">Acceuil</Link>
-                            <li><a href="#">Artistes</a></li>
-                            <li><a href="#">Nous Contacter</a></li>
-                            <li><a href="#">Se Connecter</a></li>
-                            <li><a href="#">Conditions Générales d'Utilisation</a></li>
+                            <li><NavLink  exact to="/">Acceuil</NavLink></li>
+                            <li><NavLink  to="/Index">Artistes</NavLink></li>
+                            <li><NavLink  to="/pageContact">Nous Contacter</NavLink></li>
+                            <li><NavLink  to="/">Se Connecter</NavLink></li>
+                            <li><NavLink  to="/">Conditions Générales d'Utilisation</NavLink></li>
                         </ul>
                     </div>
                     <div className="adress col-4">

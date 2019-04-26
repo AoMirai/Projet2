@@ -1,0 +1,13 @@
+.Search {
+    margin: 5%;
+    height: 40px;
+}
+
+.Search > input{
+    display: inline-block;
+    min-width: 50%;
+    height: 100%;
+    box-shadow: 5px 6px 8px grey;
+    border: solid 1px grey;
+    padding: 1%;
+}

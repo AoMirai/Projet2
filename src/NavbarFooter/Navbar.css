@@ -12,7 +12,6 @@
     width: 50px;
     margin: 20px;
 }
-
 .Navigation .link {
     color: rgba(0,0,0,.5);
     text-decoration: none;
@@ -23,3 +22,8 @@
 .Navigation .link:hover {
     color: rgba(0,0,0,.6);
 }
+.Navigation .active {
+    color: orange;
+    text-decoration: underline purple;
+}
+
