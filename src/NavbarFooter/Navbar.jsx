@@ -38,7 +38,7 @@ export default class Navigation extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/" className="link" activeClassName="active">Acceuil</NavLink>
+                <NavLink exact to="/" className="link" activeClassName="active">Acceuil</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/Index" className="link" activeClassName="active">Artistes</NavLink>
@@ -47,14 +47,10 @@ export default class Navigation extends React.Component {
                 <NavLink to="/newpresta/1" className="link" activeClassName="active">S'inscrire</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="" className="link" activeClassName="active">Nous Contacter</NavLink>
-                <Link to="/pageContact" className="link">Nous Contacter</Link>
+                <NavLink to="/pageContact" className="link" activeClassName="active">Nous Contacter</NavLink>
               </NavItem>
               <NavItem>
-                <Link to="/admin" className="link">Admin</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/admin" className="link">Admin</Link>
+                <NavLink to="/admin" className="link" activeClassName="active">Admin</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
