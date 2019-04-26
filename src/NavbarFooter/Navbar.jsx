@@ -55,6 +55,9 @@ export default class Navigation extends React.Component {
               </NavItem>
               <NavItem>
               </NavItem>
+              <NavItem>
+                <Link to="/admin" className="link">Admin</Link>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Se Connecter
