@@ -3,7 +3,7 @@ import './Titre.css'
 class Titre extends Component {
     render () {
         return(
-            <div className="titreContact">
+            <div className="TitreContact">
             <h1>Formulaire De Contact</h1>
             </div>
         )

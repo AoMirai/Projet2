@@ -4,21 +4,21 @@ import { InputGroup, InputGroupAddon, FormGroup, Label, Input, Button } from 're
 const FormContact = (props) => {
   return (
     <div className="Form">
-    <div className="a">
+    <div className="formulairea">
       <InputGroup>
         <InputGroupAddon addonType="prepend"></InputGroupAddon>
         <Input placeholder="Name :" />
       </InputGroup>
       </div>
       <br />
-      <div className="b">
+      <div className="formulaireb">
       <InputGroup>
         <InputGroupAddon addonType="prepend"></InputGroupAddon>
         <Input placeholder="Surname :" />
       </InputGroup>
       </div>
       <br />
-      <div className="c">
+      <div className="formulairec">
         <InputGroup>
         <InputGroupAddon addonType="prepend"></InputGroupAddon>
         <Input placeholder="@ :" />
@@ -27,8 +27,9 @@ const FormContact = (props) => {
       <br />
       <FormGroup>
           <Label for="exampleText">Votre Commentaire :</Label>
-          <Input type="Votre Commentaire :" name="text" id="exampleText" />
+          <Input type="Votre Commentaire :"  name="text" id="exampleText"  />
         </FormGroup>
+        
         <div className="buton"><Button color="primary">Send</Button>{' '}</div>
     </div>
     
