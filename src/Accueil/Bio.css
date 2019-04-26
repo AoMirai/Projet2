@@ -1,0 +1,23 @@
+.Bio {
+    text-align: center;
+    position: relative;
+    margin-bottom: 15%; 
+    margin-top: 10%;
+}
+
+.Bio .text {
+    top: 50%;
+    left: 50%;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Bio > img {
+    width: 100%;
+    max-height: 900px;
+    -webkit-filter: grayscale;
+    filter: grayscale(100%);
+}
