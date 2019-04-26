@@ -58,9 +58,10 @@ isConfirmed = () => {
             </p>
               </div>
               
-            <iframe title={this.props.demande.name} width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
+            
               
             </div>
+            <iframe title={this.props.demande.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
             <div className="buttons">
               <button className="accepter" onClick={this.isConfirmed} >Accepter</button>
               <button className="refuser" onClick={this.supprProfil}>Refuser</button>
