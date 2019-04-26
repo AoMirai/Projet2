@@ -18,12 +18,12 @@ class ContactA extends Component {
     return (
       <div className="ContactArtist">
           
-        <Button className="button-contact" color="primary" onClick={this.toggle} style={{ marginBottom: '5rem' }}>Contact Artist</Button>
+        <Button className="button-contact" color="primary" onClick={this.toggle} >Contact Artist</Button>
         <Collapse isOpen={this.state.collapse}>
         
           <Card>
               <div class="contactez">
-              <h1>Contactez les !!!</h1>
+              <h3>Contactez les !</h3>
               </div>
             <CardBody>
                 <div className="text">
@@ -52,11 +52,3 @@ class ContactA extends Component {
 }
 
 export default ContactA;
-
-
-
-
-
-
-
-
