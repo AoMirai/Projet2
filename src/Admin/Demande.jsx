@@ -15,7 +15,8 @@ class Demande extends Component {
     this.setState(state => ({ collapse: !state.collapse }));
   }
 
-  supprProfil(id){
+  supprProfil = () => {
+    const id = this.props.demande.id
     const config = {
         method: "DELETE"
       };
@@ -60,7 +61,7 @@ fetch(url + '/' + id, config)
             </div>
             <div className="buttons">
               <button className="accepter" href={`http://campus-bordeaux.ovh/diggn-share/profil/${this.props.demande.id}`} >Accepter</button>
-              <button className="refuser" onClick={this.supprProfil(this.props.demande.id)}>Refuser</button>
+              <button className="refuser" onClick={this.supprProfil}>Refuser</button>
             </div>
           </div>
 
