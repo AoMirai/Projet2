@@ -8,6 +8,16 @@ import Accueil from "./Accueil/Accueil";
 import Prestaform1 from "./PrestaForm1/PrestaForm";
 import Prestaform2 from "./prestaform2/Prestaform2";
 import Profil from './PageProfil/Profil'
+import AdminAcceuil from "./Admin/AdminAcceuil";
+
+import Navigate from './Admin/Navigate';
+
+import Semaine from './Admin/Semaine';
+import Demandes from './Admin/Demandes';
+import Historique from './Admin/Historique';
+import Signalements from './Admin/Signalements';
+
+import './Admin/Admin.css'
 
 import PageContact from './PageContact/PageContact';
 
@@ -111,6 +121,17 @@ class App extends Component {
             <Route path="/profil/1" component={Profil} />
            
             <Route path="/pageContact" component={PageContact}/>
+            
+            <Route path="/admin" render={() => (
+              <div className="Admin">
+                <Navigate />
+                <Route exact path="/admin" component={AdminAcceuil} />
+                <Route path="/admin/semaine" component={Semaine} />
+                <Route path="/admin/signalements" component={Signalements} />
+                <Route path="/admin/demandes" component={Demandes} />
+                <Route path="/admin/historique" component={Historique} />
+              </div>
+            )} />
 
           </Switch>
           <Footer />
