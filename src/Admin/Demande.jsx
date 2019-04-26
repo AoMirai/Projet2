@@ -7,7 +7,7 @@ class Demande extends Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = { 
-      collapse: false, 
+      collapse: false,
     };
   }
 
@@ -24,7 +24,10 @@ class Demande extends Component {
 fetch(url + '/' + id, config)
 .then(response => response.json());
 }
-
+isConfirmed = () => {
+  this.props.confirmed.push(this.props.demande.id)
+  console.log("confirmed :" + this.props.confirmed)
+}
   render() {
     return (
 
@@ -39,8 +42,8 @@ fetch(url + '/' + id, config)
         <Collapse isOpen={this.state.collapse}>
           <div className="contenu-demande">
             
-            <div className="banner" onClick={this.toggle}>
-              <img src={this.props.demande.photo} alt="" />
+            <div className="banner">
+              <img src={this.props.demande.photo} alt=""  onClick={this.toggle}/>
               <ul> 
                 <li>Groupe : {this.props.demande.name}</li> 
              <li>Membre(s): {this.props.demande.member}</li> 
@@ -60,7 +63,7 @@ fetch(url + '/' + id, config)
               
             </div>
             <div className="buttons">
-              <button className="accepter" href={`http://campus-bordeaux.ovh/diggn-share/profil/${this.props.demande.id}`} >Accepter</button>
+              <button className="accepter" onClick={this.isConfirmed} >Accepter</button>
               <button className="refuser" onClick={this.supprProfil}>Refuser</button>
             </div>
           </div>
