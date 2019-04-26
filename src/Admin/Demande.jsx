@@ -26,7 +26,6 @@ fetch(url + '/' + id, config)
 }
 isConfirmed = () => {
   this.props.confirmed.push(this.props.demande.id)
-  console.log("confirmed :" + this.props.confirmed)
 }
   render() {
     return (

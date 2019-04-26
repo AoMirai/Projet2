@@ -18,7 +18,6 @@ class Demandes extends Component {
                     demandes,
                 })
             })
-        console.log(demandes)
     }
     confirmedFilter = (demande) => {
         for (let i = 0; i < this.state.confirmed.length; i++) {
@@ -31,7 +30,6 @@ class Demandes extends Component {
     }
     render() {
         const demandes = this.state.demandes
-        console.log(demandes)
         return (
             <div className="Demandes">
                 <p>Les dernières Demandes</p>
