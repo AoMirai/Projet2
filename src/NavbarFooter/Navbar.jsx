@@ -47,7 +47,13 @@ export default class Navigation extends React.Component {
                 <NavLink to="/newpresta/1" className="link" activeClassName="active">S'inscrire</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="#" className="link" activeClassName="active">Nous Contacter</NavLink>
+                <Link to="/pageContact" className="link">Nous Contacter</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/admin" className="link">Admin</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/admin" className="link">Admin</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
