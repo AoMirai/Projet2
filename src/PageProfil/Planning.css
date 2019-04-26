@@ -1,0 +1,68 @@
+.Planning {
+  width: 95vw;
+  height: 120vw;
+  font-size : 12px;
+  padding-right : 5vw;
+  margin: 7vw 0;
+}
+.Planning .rbc-toolbar{
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size : 4w;
+}
+.Planning .rbc-toolbar .rbc-btn-group button{
+  padding: 1vw 3vw;
+}
+.Planning .rbc-toolbar .rbc-toolbar-label{
+  flex-grow: 1;
+  padding: 1vw
+}
+
+.Planning .rbc-calendar, .rbc-toolbar {
+  width: 100%;
+}
+
+.Planning .rbc-today {
+  background-color: rgba(122, 243, 122, 0.363)
+}
+
+.Planning .rbc-now > a{
+  color: rgb(187, 78, 15)
+}
+
+.Planning .rbc-btn-group, .Planning .rbc-time-view, .Planning .rbc-month-view, .Planning .rbc-agenda-view {
+  background-color: white;
+}
+
+
+@media(min-width:576px){
+.Planning{
+  height: 90vw;
+  
+}
+}
+@media(min-width:768px){
+  .Planning{
+    height: 60vw;
+    width: 54vw;
+    right: 2.5vw;
+    margin: 0 1vw;
+    padding: 0;
+  }
+  .Planning .rbc-toolbar .rbc-btn-group button{
+    padding: 0.5vw 2vw;
+  }
+  
+}
+@media(min-width:992px){
+  .Planning{
+    height: 55vw;
+    width: 55vw;
+  }
+}
+@media(min-width:1200px){
+  .Planning{
+    height: 45vw;
+    width: 45vw;
+  }
+}
