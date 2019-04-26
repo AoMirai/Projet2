@@ -1,0 +1,23 @@
+.Artist {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.Artist > img {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.Artist .desc {
+    margin-top: 4%;
+}
+
+.Artist .desc > h2 {
+    color: #DC143C;
+}

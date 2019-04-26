@@ -41,7 +41,7 @@ export default class Navigation extends React.Component {
                 <NavLink to="/" className="link" activeClassName="active">Acceuil</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="" className="link" activeClassName="active">Artistes</NavLink>
+                <NavLink to="/Index" className="link" activeClassName="active">Artistes</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/newpresta/1" className="link" activeClassName="active">S'inscrire</NavLink>
@@ -52,8 +52,6 @@ export default class Navigation extends React.Component {
               </NavItem>
               <NavItem>
                 <Link to="/admin" className="link">Admin</Link>
-              </NavItem>
-              <NavItem>
               </NavItem>
               <NavItem>
                 <Link to="/admin" className="link">Admin</Link>

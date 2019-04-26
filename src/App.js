@@ -7,6 +7,7 @@ import Footer from "./NavbarFooter/Footer";
 import Accueil from "./Accueil/Accueil";
 import Prestaform1 from "./PrestaForm1/PrestaForm";
 import Prestaform2 from "./prestaform2/Prestaform2";
+import Index from "./Index/Index";
 import Profil from './PageProfil/Profil'
 import AdminAcceuil from "./Admin/AdminAcceuil";
 
@@ -95,7 +96,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <Navigation />
+          <Navigation/>
           <Switch>
             <Route exact path="/"/>
             <Route path="/newpresta/1" render={() => 
