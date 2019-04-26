@@ -1,5 +1,5 @@
 .Medias {
-  justify-content : flex-start;
+  justify-content : space-evenly;
   flex-direction : column;
   display : flex;
   padding: 5% 0;

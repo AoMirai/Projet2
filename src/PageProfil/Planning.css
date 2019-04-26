@@ -34,6 +34,9 @@
   background-color: white;
 }
 
+.Planning .rbc-event {
+  background-color: black;
+}
 
 @media(min-width:576px){
 .Planning{
@@ -62,7 +65,7 @@
 }
 @media(min-width:1200px){
   .Planning{
-    height: 45vw;
-    width: 45vw;
+    height: 30vw;
+    width: 30vw;
   }
 }
