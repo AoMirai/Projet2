@@ -1,15 +1,10 @@
 import React, {Component} from 'react';
 import Banner from './Banner';
 import Description from './Description';
-import Playlist from './Playlist';
+import Medias from './Medias.jsx'
 import ContactA from './ContactArtist';
 
-
 import './Profil.css';
-
-
-// Normalement ça change les boutons mais ça le fait pas...
-//OBJET pour simuler un affichage
 const fakeProfil = 
   {
     name: 'Coucou', 
@@ -26,7 +21,7 @@ render(){
     <div className="Profil">
     <Banner />
     <Description description = {fakeProfil.description}/>
-    <Playlist />
+    <Medias/>
     <ContactA/>
   
     </div>

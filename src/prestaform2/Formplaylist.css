@@ -1,15 +1,38 @@
 .Formplaylist {
-    margin-left: 2%;
-    margin-top: 2%;
+  border: solid #e5e8e8 3px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  padding: 2%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Formplaylist .guide {
+  margin-bottom: 5%;
 }
 
 .Formplaylist .ImgGuide {
-    height: 35%;
-    width: 45%;
+  height: 15%;
+  width: 25%;
+  margin:2%;
+}
+
+.Formplaylist .img-link {
+  width: 75%;
 }
 
 .Formplaylist .Uri {
-    display: inline-block;
-    min-width: 50%;
-    margin-top: 1%;
+  display: inline-block;
+  min-width: 50%;
+  margin-top: 1%;
+}
+
+.Formplaylist .Send {
+  margin-bottom: 2%;
+  background-color: #f0673d;
+  border: none;
+  width: 155px;
 }
