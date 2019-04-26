@@ -1,0 +1,39 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 12px;
+    margin-left: 30px;
+    margin-right:30px;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 5%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 12%;
+}
+
+
+
+.Form .buton {
+    text-align: center;
+    color: blue
+}
+
+.Form .formulairea {
+    padding-right: 62%;
+    
+}
+
+.Form .formulaireb {
+    padding-right: 46%;
+}
+
+.Form .formulairec {
+    padding-right: 23%;
+}
