@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 import "./App.css";
 import Navigation from "./NavbarFooter/Navbar";
 import Footer from "./NavbarFooter/Footer";
+import Accueil from "./Accueil/Accueil";
 import Prestaform1 from "./PrestaForm1/PrestaForm";
 import Prestaform2 from "./prestaform2/Prestaform2";
 import Index from "./Index/Index";
@@ -20,6 +21,7 @@ import Signalements from './Admin/Signalements';
 import './Admin/Admin.css'
 
 import PageContact from './PageContact/PageContact';
+
 
 class App extends Component {
   constructor(props) {
