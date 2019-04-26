@@ -1,6 +1,25 @@
-iframe{
-    height: 170;
-    width: 25%;
-    margin-top:45px;
-    margin-left: 5%;
+.Playlist {
+    display: flex;
+    margin: 0 3%;
+    height: 60vw;
+}
+
+
+.Playlist iframe{
+    flex-grow: 1;
+
+}
+@media(min-width:768px){
+    .Playlist {
+      width: 40vw;
+      height: auto;
+    }
+    
+  }
+
+@media(min-width:992px){
+  .Playlist{
+    width: 30vw;
+      height: auto;
+  }
 }
