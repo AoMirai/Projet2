@@ -1,8 +1,7 @@
 .Bio {
     text-align: center;
     position: relative;
-    margin-bottom: 15%; 
-    margin-top: 10%;
+    margin: 0;
 }
 
 .Bio .text {

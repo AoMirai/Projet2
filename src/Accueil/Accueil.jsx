@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Bio from './Bio'
 import Cards from './Cards'
 import './Accueil.css';
-import Carousel from './Carousel'
+import Player from './Player'
 
 
 
@@ -12,6 +12,7 @@ class Accueil extends Component {
         return (
         <div className= "Acceuil">
         <Bio />
+        <Player />
         <Cards />
         </div>
         )
