@@ -10,7 +10,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-  import { Link } from "react-router-dom";
+  import { NavLink } from "react-router-dom";
 
 import './Navbar.css';
 
@@ -31,23 +31,25 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div className= "Navigation">
-        <Navbar color="light" light expand="md">
+        <Navbar expand="md">
           <img src='image/lg.png'  className="Logo" alt ="logo"/>   
           <NavbarBrand href="/">Digg'n Share</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/" className="link">Acceuil</Link>
+                <NavLink exact to="/" className="link" activeClassName="active">Acceuil</NavLink>
               </NavItem>
               <NavItem>
-                <Link to="" className="link">Artistes</Link>
+                <NavLink to="/Index" className="link" activeClassName="active">Artistes</NavLink>
               </NavItem>
               <NavItem>
-                <Link to="/newpresta/1" className="link">S'inscrire</Link>
+                <NavLink to="/newpresta/1" className="link" activeClassName="active">S'inscrire</NavLink>
               </NavItem>
               <NavItem>
-                <Link to="" className="link">Nous Contacter</Link>
+                <NavLink to="/pageContact" className="link" activeClassName="active">Nous Contacter</NavLink>
+              </NavItem>
+              <NavItem>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
@@ -58,7 +60,7 @@ export default class Navigation extends React.Component {
                     Utilisateur
                   </DropdownItem>
                   <DropdownItem>
-                    Administrateur
+                <NavLink to="/admin" className="link" activeClassName="active">Admin</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

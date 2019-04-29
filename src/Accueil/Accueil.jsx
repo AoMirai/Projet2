@@ -11,8 +11,8 @@ class Accueil extends Component {
     render() {
         return (
         <div className= "Acceuil">
-        <Bio />
         <Player />
+        <Bio />
         <Cards />
         </div>
         )

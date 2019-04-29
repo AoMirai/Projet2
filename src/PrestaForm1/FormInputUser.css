@@ -1,6 +1,7 @@
-.FormInputUser .App {
+.FormInputUser {
   background-color: #F5F5F5;
 }
+
 .FormInputUser .bloc-input {
   border-radius: 5px;
   border: 3px solid #E5E8E8;
@@ -12,17 +13,31 @@
   margin-bottom: 2%;
 }
 
+.FormInputUser .bloc-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
   
 .FormInputUser form {
     padding: 0 40px;
     margin :5%;
   }
   
-.FormInputUser   form input {
-    width: 100%;
+.FormInputUser input {
+  display: inline-block;
+    min-width: 50%;
     font-size: 20px;
     padding: 5px 10px;
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #EEEEEE;
+  }
+
+  .FormInputUser .input {
+    display: inline-block;
+    max-width: 75%;
+    min-width: 50%;
   }

@@ -1,0 +1,30 @@
+.Demande {
+  padding: 5px;
+  border: solid 1px black;
+  width: 80vw;
+}
+
+.Demande img {
+  width: 20%;
+  height: 20%;
+}
+
+.Demande .banner, .Demande .descr-play{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.Demande .buttons {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Demande .accepter {
+  background-color: green;
+  color : white;
+}
+
+.Demande .refuser {
+  background-color: red;
+  color : white;
+}
