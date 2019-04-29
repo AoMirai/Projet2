@@ -45,11 +45,11 @@ class Demandes extends Component {
         const demandes = this.state.demandes
         return (
             <div className="Demandes">
-                <p>Les dernières Demandes</p>
+                <h5>Les dernières Demandes</h5>
                 {demandes.filter(this.confirmedFilter).map((demande, index) =>
                     <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.isConfirmed} />
                 )
-                } {}
+                }
             </div>
         )
     }

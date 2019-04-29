@@ -9,16 +9,13 @@ export default class Navigate extends React.Component {
       <div className="Navigate"> 
         <Nav vertical>
           <NavItem>
+            <NavLink className="link" activeClassName exact to="/admin">Acceuil</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink className="link" activeClassName to="/admin/demandes">Demandes</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="link" activeClassName to="/admin/semaine">Semaine</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink className="link" activeClassName to="/admin/signalements">Signalements</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink className="link" activeClassName to="/admin/historique">Historique</NavLink>
+            <NavLink className="link" activeClassName to="/admin/messages">Messages</NavLink>
           </NavItem>
         </Nav>
       </div>

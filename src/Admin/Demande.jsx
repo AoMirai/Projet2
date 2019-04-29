@@ -59,7 +59,11 @@ class Demande extends Component {
             
               
             </div>
-            <iframe title={this.props.demande.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
+            {(this.props.demande.playlist).includes("<iframe") ? this.props.demande.playlist : 
+            this.props.demande.playlist !== "" 
+            ? <iframe title={this.props.demande.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
+            :""
+          }
             <div className="buttons">
               <button className="accepter" onClick={this.nowIsConfirmed} >Accepter</button>
               <button className="refuser" onClick={this.nowSupprProfil}>Refuser</button>
