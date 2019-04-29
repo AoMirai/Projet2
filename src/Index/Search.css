@@ -8,6 +8,6 @@
     min-width: 50%;
     height: 100%;
     box-shadow: 5px 6px 8px grey;
-    border: solid 1px grey;
+    border: solid 1px #000000;
     padding: 1%;
 }

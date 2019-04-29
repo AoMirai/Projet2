@@ -31,7 +31,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div className= "Navigation">
-        <Navbar color="light" light expand="md">
+        <Navbar expand="md">
           <img src='image/lg.png'  className="Logo" alt ="logo"/>   
           <NavbarBrand href="/">Digg'n Share</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -50,7 +50,6 @@ export default class Navigation extends React.Component {
                 <NavLink to="/pageContact" className="link" activeClassName="active">Nous Contacter</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/admin" className="link" activeClassName="active">Admin</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
@@ -61,7 +60,7 @@ export default class Navigation extends React.Component {
                     Utilisateur
                   </DropdownItem>
                   <DropdownItem>
-                    Administrateur
+                <NavLink to="/admin" className="link" activeClassName="active">Admin</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

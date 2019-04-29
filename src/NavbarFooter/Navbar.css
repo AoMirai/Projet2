@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
 .Navigation .navbar-brand {
    font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   color: black;
 }
 
 .Navigation .ml-auto {
@@ -13,7 +16,7 @@
     margin: 20px;
 }
 .Navigation .link {
-    color: rgba(0,0,0,.5);
+    color: black;
     text-decoration: none;
     display: block;
     padding: .5rem 1rem;
@@ -24,5 +27,9 @@
 }
 .Navigation .active {
     color: #f0673d;
+}
+
+.Navigation .dropdown-toggle {
+    color: black;
 }
 
