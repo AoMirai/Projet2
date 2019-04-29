@@ -28,7 +28,7 @@ class Medias extends Component {
   render(){
     return(
     <div className="Medias">
-      <Playlist />
+    <Playlist playlist={this.props.playlist} name={this.props.name}/>
     <Planning messages={messages}/>
     </div>
     )

@@ -124,7 +124,7 @@ class App extends Component {
                 />
               )}
             />
-            <Route path="/profil/1" component={Profil} />
+            <Route path="/profil/:id" component={Profil} />
             <Route path="/index" component={Index} />
             <Route path="/pageContact" component={PageContact} />
             <Route

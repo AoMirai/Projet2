@@ -7,18 +7,22 @@ class ContactA extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    this.state = { collapse: false };
+    this.state = { 
+      collapse: false ,
+      show: true,
+    };
   }
 
   toggle() {
     this.setState(state => ({ collapse: !state.collapse }));
+    this.setState(state => ({ show: !state.show }));
   }
 
   render() {
     return (
       <div className="ContactArtist">
           
-        <Button className="button-contact" color="primary" onClick={this.toggle} >Contact Artist</Button>
+        <Button className="button-contact" color="primary" style={{display: this.state.show ? 'block' : 'none' }} onClick={this.toggle} >Contact Artist</Button>
         <Collapse isOpen={this.state.collapse}>
         
           <Card>
@@ -37,7 +41,7 @@ class ContactA extends Component {
              
             </CardBody>
             <div >
-        <Button className="button-send"color="primary" size="lg">Send</Button>{' '}
+        <Button className="button-send" size="lg">Send</Button>{' '}
         </div>
           </Card>
         </Collapse>

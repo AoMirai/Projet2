@@ -8,11 +8,11 @@ class Banner extends Component {
 
         <div className="Banner">
             <div class="image">
-                <img src='image/band.jpg' className='band' alt="band"/>
+                <img src={this.props.photo} className='band' alt="band"/>
             </div>
             <ul>
-            <li>NOM DU GROUPE</li>
-            <li>STYLE DE MUSIC</li>
+            <li>{this.props.name}</li>
+            <li>{this.props.style}</li>
             </ul>
         
         

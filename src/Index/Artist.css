@@ -7,6 +7,18 @@
     margin: 0;
 }
 
+.Artist:hover {
+    text-decoration: none
+}
+
+.Artist .desc > p {
+    color: black;
+}
+
+.Artist:hover > img {
+    box-shadow: 5px 6px 15px grey;
+}
+
 .Artist > img {
     width: 200px;
     height:200px;
