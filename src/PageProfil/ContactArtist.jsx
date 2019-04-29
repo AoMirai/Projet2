@@ -22,7 +22,7 @@ class ContactA extends Component {
     return (
       <div className="ContactArtist">
           
-        <Button className="button-contact" color="primary" style={{display: this.state.show ? 'block' : 'none' }} onClick={this.toggle} >Contact Artist</Button>
+        <Button className="button-contact" style={{display: this.state.show ? 'block' : 'none' }} onClick={this.toggle} >Contactez-le(s)</Button>
         <Collapse isOpen={this.state.collapse}>
         
           <Card>
@@ -32,8 +32,8 @@ class ContactA extends Component {
             <CardBody>
                 <div className="text">
                 <FormGroup>
-                    <Label for="exampleText">Votre Message</Label>
-                    <Input type="textarea" name="text" id="exampleText" />
+                    <Label for="exampleText"></Label>
+                    <Input type="textarea" name="text" id="exampleText" placeholder="Votre message"/>
                 </FormGroup>
             
             </div>
