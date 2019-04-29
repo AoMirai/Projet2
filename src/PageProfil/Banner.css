@@ -1,39 +1,46 @@
 .Banner {
-  border-radius: 10px;
-  border:1px solid black;
-  padding:5vw;
-  border-width:3px;
-  display: flex;;
-  justify-content: space-between;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow:5px 6px 8px grey;
 } 
+
+.Banner .name {
+  color: #DC143C;
+  font-size: 32px;
+}
 
 .Banner  li{
   font-size:27px;
   list-style:none;
-
 }
 
 .Banner ul{
 margin: 0;
-padding-top: 5vw;
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-around;
 }
 
 .Banner .image img{
-width: 100%
+width: 250px;
 } 
 
 @media(min-width:768px){
   .Banner{
     flex-direction: row;
-    
+    width: 100%;
+  }
+
+  .Banner .name {
+    font-size: 42px;
   }
 
   .Banner ul {
     padding-top: 0;
+    padding-right: 25%;
   }
   
 } 
+

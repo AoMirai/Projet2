@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Artist from "./Artist";
 
 class Artists extends Component {
@@ -6,7 +7,7 @@ class Artists extends Component {
     return (
       <div className="Artists row">
         {this.props.artists.map(artist => (
-          <Artist key={artist.id} photo={artist.photo} name={artist.name} style={artist.style} className="col-12"/>
+          <Artist key={artist.id} artist={artist} className="col-12"/>
         ))}
       </div>
     );
