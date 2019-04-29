@@ -13,9 +13,8 @@ import AdminAcceuil from "./Admin/AdminAcceuil";
 
 import Navigate from "./Admin/Navigate";
 
-import Semaine from "./Admin/Semaine";
 import Demandes from "./Admin/Demandes";
-import Historique from "./Admin/Historique";
+import Messages from "./Admin/Messages";
 import Signalements from "./Admin/Signalements";
 
 import "./Admin/Admin.css";
@@ -133,10 +132,8 @@ class App extends Component {
                 <div className="Admin">
                   <Navigate />
                   <Route exact path="/admin" component={AdminAcceuil} />
-                  <Route path="/admin/semaine" component={Semaine} />
-                  <Route path="/admin/signalements" component={Signalements} />
                   <Route path="/admin/demandes" component={Demandes} />
-                  <Route path="/admin/historique" component={Historique} />
+                  <Route path="/admin/messages" component={Messages} />
                 </div>
               )}
             />
