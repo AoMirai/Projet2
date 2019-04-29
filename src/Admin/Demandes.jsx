@@ -46,7 +46,6 @@ class Demandes extends Component {
         return (
             <div className="Demandes">
                 <p>Les dernières Demandes</p>
-{console.log("confirmed :" + this.state.confirmed)}
                 {demandes.filter(this.confirmedFilter).map((demande, index) =>
                     <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.isConfirmed} />
                 )
