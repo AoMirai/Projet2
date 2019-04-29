@@ -24,7 +24,6 @@ class Profil extends Component {
     fetch(`http://51.68.18.101:3002/diggnshare/api/recipients/${id}`)
         .then(response => response.json())
         .then(data => {
-          console.log(data)
             this.setState({
                 ...data,
             });
@@ -34,10 +33,10 @@ class Profil extends Component {
 render(){
   return (
     <div className="Profil">
-    <Banner photo={this.state.photo} name={this.state.name} style={this.state.style}/>
-    <Description desc={this.state.description}/>
-    <Medias playlist={this.state.playlist} name={this.state.name}/>
-    <ContactA/>
+    <Banner photo={this.state.photo} name={this.state.name} style={this.state.style} className="col-12"/>
+    <Description desc={this.state.description} className="col-12"/>
+    <Medias playlist={this.state.playlist} name={this.state.name} className="col-12"/>
+    <ContactA className="col-12"/>
     </div>
   )
 }

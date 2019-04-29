@@ -1,11 +1,15 @@
 .Banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 50%;
-  border: solid 1px black;
+  align-items: center;
+  box-shadow:5px 6px 8px grey;
 } 
+
+.Banner .name {
+  color: #DC143C;
+  font-size: 32px;
+}
 
 .Banner  li{
   font-size:27px;
@@ -17,21 +21,26 @@ margin: 0;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-padding: 0;
 }
 
 .Banner .image img{
-width: 200px;
+width: 250px;
 } 
 
 @media(min-width:768px){
   .Banner{
     flex-direction: row;
-    
+    width: 100%;
+  }
+
+  .Banner .name {
+    font-size: 42px;
   }
 
   .Banner ul {
     padding-top: 0;
+    padding-right: 25%;
   }
   
 } 
+
