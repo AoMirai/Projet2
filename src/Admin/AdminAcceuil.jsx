@@ -20,7 +20,7 @@ class AdminAcceuil extends Component {
          <div className="AdminAcceuil">
             <h4>Bonjour, Administrateur !</h4>
             <p>Vous avez {this.state.demandes.length} demandes en attentes.
-            Et 5 messages non-lus. {console.log(this.state.demandes)}
+            Et 5 messages non-lus.
             </p>
             <Demandes/>
             <Messages/>
