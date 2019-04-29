@@ -15,18 +15,16 @@ class Demande extends Component {
     this.setState(state => ({ collapse: !state.collapse }));
   }
 
-  supprProfil = () => {
+  nowIsConfirmed = () => {
     const id = this.props.demande.id
-    const config = {
-        method: "DELETE"
-      };
-    const url = "http://51.68.18.101:3002/diggnshare/api/recipients";
-fetch(url + '/' + id, config)
-.then(response => response.json());
-}
-isConfirmed = () => {
-  this.props.confirmed.push(this.props.demande.id)
-}
+    this.props.isConfirmed(id)
+
+  }
+  nowSupprProfil = () => {
+    const id = this.props.demande.id;
+    this.props.supprProfil(id)
+  }
+  
   render() {
     return (
 
@@ -63,8 +61,8 @@ isConfirmed = () => {
             </div>
             <iframe title={this.props.demande.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
             <div className="buttons">
-              <button className="accepter" onClick={this.isConfirmed} >Accepter</button>
-              <button className="refuser" onClick={this.supprProfil}>Refuser</button>
+              <button className="accepter" onClick={this.nowIsConfirmed} >Accepter</button>
+              <button className="refuser" onClick={this.nowSupprProfil}>Refuser</button>
             </div>
           </div>
 
