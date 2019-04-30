@@ -1,6 +1,5 @@
-.Description{
-  margin: 2% 5%;
-}
-.Description h3 {
-  padding: 5vw 0;
+.Description {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5%;
 }

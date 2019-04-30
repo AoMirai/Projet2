@@ -1,13 +1,31 @@
 .Search {
-    margin-bottom: 5%;
-    height: 40px;
+  margin-bottom: 5%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1.5rem 4fr;
+  width: 300px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  box-shadow:5px 6px 8px grey;
 }
 
-.Search > input{
-    display: inline-block;
-    min-width: 50%;
-    height: 100%;
-    box-shadow: 5px 6px 8px grey;
-    border: solid 1px grey;
-    padding: 1%;
+.Search .fa-search {
+  margin-top: 45%;
+  margin-left: 20%;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.searchButton {
+  background: #538ac5;
+  border: 0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0;
+  grid-column: 4/5;
+  grid-row: 1;
 }
