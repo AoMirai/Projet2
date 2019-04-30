@@ -18,7 +18,7 @@ class AdminAcceuil extends Component {
     render() { 
         return(
          <div className="AdminAcceuil">
-            <h4>Bonjour, Administrateur !</h4>
+            <h3>Bienvenue, Administrateur !</h3>
             <p>Vous avez {this.state.demandes.length} demandes en attentes.
             Et 5 messages non-lus.
             </p>

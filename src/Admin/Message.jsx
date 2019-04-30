@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import  {Collapse} from 'reactstrap';
+import './Message.css'
 
 class Message extends Component {
   constructor(props) {

@@ -2,3 +2,10 @@
   background-color: red;
   color : white;
 }
+.Message {
+  border-top: solid black 1px;
+}
+.Message ul {
+
+  list-style-type: none; 
+}

@@ -30,11 +30,7 @@ class Demande extends Component {
 
       <div className="Demande" >
         <Collapse className="resume-button" onClick={this.toggle} isOpen={!this.state.collapse}>
-        <ul> 
-                <li>Groupe : {this.props.demande.name}</li> 
-             <li>Membre(s): {this.props.demande.member}</li> 
-             <li>Style : {this.props.demande.style}</li> 
-                </ul>
+        <div className="name">{this.props.demande.name}</div>
         </Collapse>
         <Collapse isOpen={this.state.collapse}>
           <div className="contenu-demande">
