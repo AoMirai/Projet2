@@ -4,6 +4,18 @@ import Messages from './Messages';
 
 
 class AdminAcceuil extends Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         demandes: []
+      }
+   }
+  
+  componentDidMount() {
+      fetch("http://51.68.18.101:3002/diggnshare/api/recipients")
+         .then(response => response.json())
+         .then(demandes => this.setState({ demandes }))
+  }
 
    render() {
       return (

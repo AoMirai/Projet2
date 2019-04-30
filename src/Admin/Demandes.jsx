@@ -31,7 +31,7 @@ class Demandes extends Component {
         return (
             <div className="Demandes">
                 <h4>Les dernières Demandes</h4>
-                {this.props.demandes.filter(this.props.confirmedFilter).map((demande, index) =>
+                {this.state.demandes.filter(this.props.confirmedFilter).map((demande, index) =>
                     <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.props.isConfirmed} />
                 )
                 }
