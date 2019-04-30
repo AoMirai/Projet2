@@ -5,14 +5,14 @@
 .Slideform .slide1 {
     margin:20px;
     border-radius:50% !important;
-    background-color:#DC143C;
+    background-color:#228B22;
     color:white;
   }
 .Slideform .slide2 {
     margin:20px;
     border-radius:50% !important;
     color:white;
-    background-color:#DC143C;
+    background-color:#228B22;
   }
 .Slideform .pagination {
     justify-content: center;

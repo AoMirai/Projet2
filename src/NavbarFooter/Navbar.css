@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .Navigation {
-    background-color: white;
+    background-color: white !important;
 }
 
 .Navigation .navbar-brand {
    font-family: 'ProBlack', sans-serif;
    text-decoration: none;
-   color: black;
+   letter-spacing: 3px;
+   color: #DC143C;
 }
+
+.Navigation .navbar-brand:hover {
+    color: #DC143C;
+ }
 
 .Navigation .ml-auto {
     font-family: 'Open Sans', sans-serif;
 }
 
 .Navigation .Logo {
-    width: 50px;
+    width: 75px;
     margin: 20px;
 }
 .Navigation .link {
@@ -33,6 +38,6 @@
 }
 
 .Navigation .dropdown-toggle {
-    color: black;
+    color: black !important;
 }
 

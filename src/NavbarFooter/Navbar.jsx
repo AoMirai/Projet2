@@ -30,14 +30,14 @@ export default class Navigation extends React.Component {
   }
   render() {
     return (
-        <Navbar expand="md" sticky="top" className="Navigation">
+        <Navbar expand="md" color="light" light sticky="top" className="Navigation">
           <img src='image/lg.png'  className="Logo" alt ="logo"/>   
           <NavbarBrand href="/">Digg'n Share</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink exact to="/" className="link" activeClassName="active">Acceuil</NavLink>
+                <NavLink exact to="/" className="link" activeClassName="active">Accueil</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/Index" className="link" activeClassName="active">Artistes</NavLink>

@@ -14,9 +14,9 @@ const cards = [
         description:'Actifs depuis de nombreuses années sur Bordeaux, les membres du collectif tplt font vivre la scène électronique et la ville à leur manière.'
     },
     {
-        image:'image/Orangeade.jpg',
-        title: "L'Orangeade",
-        description:"Producteur d'évènements musicaux à Bordeaux et en France depuis 2014, le collectif explore des lieux atypiques pour poser ses vinyles. L'Orangeade privilégie la black music et le groove.",
+        image:'image/copieblanche.png',
+        title: "Copie Blanche",
+        description:"Que peut on penser d'une copie blanche à proprement parler ? Rien , justement ... ",
     },
 ]
 

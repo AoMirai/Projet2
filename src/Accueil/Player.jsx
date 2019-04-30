@@ -5,7 +5,8 @@ import './Player.css'
   render () {
     return (
     <div className="Player">
-    <video className="video" source src="image/Digg2.mp4" type="video/mp4" playsinline autoPlay muted loop/>
+      <video className="video" source src="image/Digg2.mp4" type="video/mp4" playsinline autoPlay muted loop/>
+      <h2>Vos nuits ont des oreilles</h2>
     </div>
     )
   }

@@ -9,6 +9,16 @@
     font-family: 'ProBlack', sans-serif;
 }
 
+.Bio p {
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.Bio .infos {
+    margin-bottom: 5%;
+}
+
 .Bio .text {
     top: 50%;
     left: 50%;
@@ -23,4 +33,13 @@
     max-height: 900px;
     -webkit-filter: grayscale;
     filter: grayscale(100%);
+}
+
+.Bio .focus {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.Bio{
+    padding: 5%;
 }
