@@ -36,31 +36,15 @@ const messages = [
     },
 ]
 class Messages extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            suppr: []
-        }
-    }
-    isConfirmed = (id) => {
-        this.setState({suppr: [...this.state.suppr, id]})
-    }
-    confirmedFilter = (message) => {
-        for (let i = 0; i < this.state.suppr.length; i++) {
-            if (message.id === this.state.suppr[i]) {
-                return false
-            }
-        }
-        return true
-    }
+    
     render(){
         return(
             <div className="Messages">
+
             <h4>Messages de contact</h4>
-            {messages.filter(this.confirmedFilter).map((message, index) =>
-                    <Message key={index} message={message} isConfirmed={this.isConfirmed}/>
-                )
-                }
+            {messages.filter(this.props.confirmedFilterSuppr).map((message, index) =>
+                    <Message key={index} message={message} isSuppr={this.props.isSuppr}/>)
+              }
             </div>
             
 

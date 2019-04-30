@@ -16,7 +16,6 @@ import Navigate from "./Admin/Navigate";
 
 import Demandes from "./Admin/Demandes";
 import Messages from "./Admin/Messages";
-import Signalements from "./Admin/Signalements";
 
 import "./Admin/Admin.css";
 
@@ -33,7 +32,9 @@ class App extends Component {
       planning: "",
       playlist: "",
       price: 120,
-      style: ""
+      style: "",
+      confirmed: [18, 19, 20, 21, 22, 23, 24, 25, 26, 31],
+      suppr:[],
     };
   }
 
@@ -91,13 +92,49 @@ class App extends Component {
       });
   };
 
+
+  confirmedFilter = (demande) => {
+    for (let i = 0; i < this.state.confirmed.length; i++) {
+      if (demande.id === this.state.confirmed[i]) {
+        return false
+      }
+    }
+    return true
+
+  }
+
+  confirmedFilterInversed = (demande) => {
+    for (let i = 0; i < this.state.confirmed.length; i++) {
+      if (demande.id === this.state.confirmed[i]) {
+        return true
+      }
+    }
+    return false
+  }
+
+  isConfirmed = (id) => {
+    this.setState({ confirmed: [...this.state.confirmed, id] })
+  }
+
+  isSuppr = (id) => {
+    this.setState({suppr: [...this.state.suppr, id]})
+  }
+  confirmedFilterSuppr = (message) => {
+    for (let i = 0; i < this.state.suppr.length; i++) {
+        if (message.id === this.state.suppr[i]) {
+            return false
+        }
+    }
+    return true
+}
+
   render() {
     return (
       <div className="App">
         <BrowserRouter>
           <Navigation />
           <Switch>
-            <Route exact path="/" component={Accueil}/>
+            <Route exact path="/" component={Accueil} />
             <Route
               path="/newpresta/1"
               render={() => (
@@ -125,7 +162,10 @@ class App extends Component {
               )}
             />
             <Route path="/profil/:id" component={Profil} />
-            <Route path="/index" component={Index} />
+            <Route path="/index" render={() => (
+              <Index 
+                isConfirmed={this.isConfirmed} 
+                confirmedFilterInversed={this.confirmedFilterInversed}/>)} />
             <Route path="/pageContact" component={PageContact} />
             <Route path="/interview" component={Interview} />
             <Route
@@ -133,9 +173,22 @@ class App extends Component {
               render={() => (
                 <div className="Admin">
                   <Navigate />
-                  <Route exact path="/admin" component={AdminAcceuil} />
-                  <Route path="/admin/demandes" component={Demandes} />
-                  <Route path="/admin/messages" component={Messages} />
+                  <Route exact path="/admin" render={() => (
+                    <AdminAcceuil 
+                      isSuppr={this.isSuppr}
+                      confirmedFilterSuppr={this.confirmedFilterSuppr}
+                      isConfirmed={this.isConfirmed} 
+                      confirmedFilter={this.confirmedFilter}/>)} />
+                  <Route path="/admin/demandes" render={() => (
+                    <Demandes 
+                      confirmed={this.state.confirmed}
+                      isConfirmed={this.isConfirmed} 
+                      confirmedFilter={this.confirmedFilter}/>)} />
+                  <Route path="/admin/messages" render={() => (
+                    <Messages 
+                      suppr={this.state.suppr}
+                      isSuppr={this.isSuppr}
+                      confirmedFilterSuppr={this.confirmedFilterSuppr}/>)} />
                 </div>
               )}
             />

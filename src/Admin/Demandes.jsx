@@ -3,33 +3,7 @@ import Demande from './Demande'
 import './Demandes.css'
 
 class Demandes extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            demandes: [],
-            confirmed: [],
-
-        }
-    }
-    componentDidMount() {
-        const demandes = this.state.demandes
-        fetch("http://51.68.18.101:3002/diggnshare/api/recipients")
-            .then(response => response.json())
-            .then(demandes => {
-                this.setState({
-                    demandes,
-                })
-            })
-    }
-    confirmedFilter = (demande) => {
-        for (let i = 0; i < this.state.confirmed.length; i++) {
-            if (demande.id === this.state.confirmed[i]) {
-                return false
-            }
-        }
-        return true
-        
-    }
+    
     supprProfil = (id) => {
         const config = {
             method: "DELETE"
@@ -39,16 +13,13 @@ class Demandes extends Component {
     .then(response => response.json());
     this.setState({confirmed: [...this.state.confirmed, id]})
     }
-    isConfirmed = (id) => {
-        this.setState({confirmed: [...this.state.confirmed, id]})
-    }
+    
     render() {
-        const demandes = this.state.demandes
         return (
             <div className="Demandes">
                 <h4>Les dernières Demandes</h4>
-                {demandes.filter(this.confirmedFilter).map((demande, index) =>
-                    <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.isConfirmed} />
+                {this.props.demandes.filter(this.props.confirmedFilter).map((demande, index) =>
+                    <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.props.isConfirmed} />
                 )
                 }
             </div>

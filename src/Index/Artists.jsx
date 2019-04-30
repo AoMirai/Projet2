@@ -7,7 +7,7 @@ class Artists extends Component {
   render() {
     return (
       <div className="Artists row">
-        {this.props.artists.map(artist => (
+        {this.props.artists.filter(this.props.confirmedFilterInversed).map(artist => (
           <Artist key={artist.id} artist={artist} className="col-12"/>
         ))}
       </div>

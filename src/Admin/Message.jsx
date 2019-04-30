@@ -15,9 +15,9 @@ class Message extends Component {
     this.setState(state => ({ collapse: !state.collapse }));
   }
 
-  nowIsConfirmed = () => {
+  nowIsSuppr = () => {
     const id = this.props.message.id
-    this.props.isConfirmed(id)
+    this.props.isSuppr(id)
 
   }
   
@@ -38,7 +38,7 @@ class Message extends Component {
             <h5 onClick={this.toggle}>{`${this.props.message.firstname} ${this.props.message.lastname}`}</h5>
             <p>{this.props.message.message}</p>
             <div className="buttons">
-              <button className="suppr" onClick={this.nowIsConfirmed} >Supprimer</button>
+              <button className="suppr" onClick={this.nowIsSuppr} >Supprimer</button>
             </div>
           </div>
 
