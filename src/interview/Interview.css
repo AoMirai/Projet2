@@ -1,0 +1,17 @@
+.Interview .focus .img1{
+    display:flex;
+}
+
+.Interview .text {
+font-family: 'Open Sans', sans-serif;
+text-align:center;
+margin-bottom:30px;
+}
+
+.Interview .text span {
+    color:black;
+    font-weight:bold;
+}
+
+
+

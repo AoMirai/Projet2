@@ -10,6 +10,7 @@ import Prestaform2 from "./prestaform2/Prestaform2";
 import Index from "./Index/Index";
 import Profil from "./PageProfil/Profil";
 import AdminAcceuil from "./Admin/AdminAcceuil";
+import Interview from "./interview/Interview";
 
 import Navigate from "./Admin/Navigate";
 
@@ -126,6 +127,7 @@ class App extends Component {
             <Route path="/profil/:id" component={Profil} />
             <Route path="/index" component={Index} />
             <Route path="/pageContact" component={PageContact} />
+            <Route path="/interview" component={Interview} />
             <Route
               path="/admin"
               render={() => (
