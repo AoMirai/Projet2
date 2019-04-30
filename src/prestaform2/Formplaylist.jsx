@@ -8,8 +8,8 @@ class Formplaylist extends Component {
       <div className="Formplaylist">
           <div className="guide">
             <p>
-              Pour incorporé votre playlist spotify ou soundcloud vous devez
-              inscrire le lien embed de celle-ci, qui ets sous forme:
+              Pour incorporer votre playlist Spotify ou Soundcloud, vous devez
+              inscrire le lien embed de celle-ci, qui est sous forme:
               iframe.../iframe.
               <br />
               Pour le récupérer faites comme ci-dessous:{" "}
@@ -25,7 +25,7 @@ class Formplaylist extends Component {
               className="ImgGuide"
             />
             <p>
-              Ensuite il suffit de récupérer le lien qui se trouve dans le
+              Ensuite il vous suffit de récupérer le lien qui se trouve dans le
               "src=" comme ci-dessous:
             </p>
             <img
