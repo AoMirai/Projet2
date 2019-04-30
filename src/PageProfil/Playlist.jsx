@@ -4,8 +4,8 @@ import './Playlist.css';
 class Playlist extends Component {
     render() {
       return (
-        <div className="playlist">
-          <iframe title={this.props.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.playlist}></iframe>
+        <div className="Playlist">
+          <iframe title={this.props.name} className="play" scrolling="no" frameborder="no" allow="autoplay" src={this.props.playlist}></iframe>
         </div>
         
       );
