@@ -1,5 +1,5 @@
 .Prestaform {
-  background-color: #f5f5f5;
+  background-color: white;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -10,7 +10,7 @@
 
 .Prestaform .Send {
   margin-bottom: 2%;
-  background-color: #f0673d;
+  background-color: #DC143C;
   border: none;
   border-radius: 5%;
   width: 155px;

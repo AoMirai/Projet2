@@ -1,6 +1,6 @@
   .FormAddPerson form button {
     border-radius: 5px;
-    background-color: #f0673d;
+    background-color: #DC143C;
     color: #fff;
     font-size: 15px;
     height: auto;
@@ -9,7 +9,7 @@
   }
   
   .FormAddPerson form button:hover {
-    background-color:#f0673d;
+    background-color:#DC143C;
   }
   
   .FormAddPerson form button.small {
