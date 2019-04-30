@@ -21,7 +21,7 @@ const FormContact = props => {
       </InputGroup>
       <InputGroup className="forminput">
         <InputGroupAddon addonType="prepend" />
-        <Input placeholder="adresse mail" />
+        <Input placeholder="Adresse email" />
       </InputGroup>
       <FormGroup className="forminput">
         <Label for="exampleText">Votre Commentaire :</Label>
