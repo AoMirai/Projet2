@@ -1,0 +1,17 @@
+.Focus .img1{
+    display:flex;
+}
+
+.text {
+font-family: 'Open Sans', sans-serif;
+text-align:center;
+margin-bottom:30px;
+}
+
+.text span {
+    color:black;
+    font-weight:bold;
+}
+
+
+
