@@ -1,71 +1,97 @@
-.Planning {
-  width: 95vw;
-  height: 120vw;
-  font-size : 12px;
-  padding-right : 5vw;
-  margin: 7vw 0;
-}
-.Planning .rbc-toolbar{
-  justify-content: space-evenly;
+.PlanningPrice {
+  height: 300px;
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  font-size : 4w;
-}
-.Planning .rbc-toolbar .rbc-btn-group button{
-  padding: 1vw 3vw;
-}
-.Planning .rbc-toolbar .rbc-toolbar-label{
-  flex-grow: 1;
-  padding: 1vw
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Planning .rbc-calendar, .rbc-toolbar {
+.PlanningPrice .planning {
+  height: 300px;
+  width: 75%;
+}
+
+
+
+.PlanningPrice .planning .rbc-btn-group {
+  display: none;
+}
+
+.PlanningPrice .planning .rbc-toolbar {
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.PlanningPrice .planning .rbc-toolbar .rbc-btn-group button {
+  padding: 1vw 3vw;
+}
+.PlanningPrice .planning .rbc-toolbar .rbc-toolbar-label {
+  flex-grow: 1;
+  padding: 1vw;
+}
+
+.PlanningPrice .planning .rbc-calendar,
+.rbc-toolbar {
   width: 100%;
 }
 
-.Planning .rbc-today {
-  background-color: rgba(122, 243, 122, 0.363)
+.PlanningPrice .planning .rbc-today {
+  background-color: rgba(122, 243, 122, 0.363);
 }
 
-.Planning .rbc-now > a{
-  color: rgb(187, 78, 15)
+.PlanningPrice .planning .rbc-now > a {
+  color: rgb(187, 78, 15);
 }
 
-.Planning .rbc-btn-group, .Planning .rbc-time-view, .Planning .rbc-month-view, .Planning .rbc-agenda-view {
+.PlanningPrice .planning .rbc-btn-group,
+.PlanningPrice .planning .rbc-time-view,
+.PlanningPrice .planning .rbc-month-view,
+.PlanningPrice .planning .rbc-agenda-view {
   background-color: white;
 }
 
-.Planning .rbc-event {
+.PlanningPrice .planning .rbc-event {
   background-color: black;
 }
 
-@media(min-width:576px){
-.Planning{
-  height: 90vw;
-  
+.PlanningPrice .price > p {
+  font-size: 26px;
 }
-}
-@media(min-width:768px){
-  .Planning{
-    height: 60vw;
-    width: 54vw;
-    right: 2.5vw;
-    margin: 0 1vw;
-    padding: 0;
+
+@media screen and (min-width: 700px) {
+   .PlanningPrice {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
   }
-  .Planning .rbc-toolbar .rbc-btn-group button{
-    padding: 0.5vw 2vw;
-  }
-  
+
+  .price {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
 }
-@media(min-width:992px){
-  .Planning{
-    height: 55vw;
-    width: 55vw;
-  }
+
+.price h2,
+.price p {
+  position: relative;
+  float: left;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-@media(min-width:1200px){
-  .Planning{
-    height: 30vw;
-    width: 30vw;
-  }
 }
+
+@media screen and (max-width: 700px) {
+
+  .PlanningPrice .price {
+    display: none;
+  }
+
+}
+

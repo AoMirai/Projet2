@@ -6,7 +6,7 @@ class Search extends Component {
     return (
       <div className="Search">
         <input
-          placeholder="Search artist or style .."
+          placeholder="Recherche artiste ou style"
           name="text"
           type="text"
           value={this.props.text}

@@ -7,6 +7,7 @@ class Demandes extends Component {
         this.state = {
             demandes: [],
             confirmed: [],
+
         }
     }
     componentDidMount() {
@@ -28,16 +29,27 @@ class Demandes extends Component {
         return true
         
     }
+    supprProfil = (id) => {
+        const config = {
+            method: "DELETE"
+          };
+        const url = "http://51.68.18.101:3002/diggnshare/api/recipients";
+    fetch(url + '/' + id, config)
+    .then(response => response.json());
+    this.setState({confirmed: [...this.state.confirmed, id]})
+    }
+    isConfirmed = (id) => {
+        this.setState({confirmed: [...this.state.confirmed, id]})
+    }
     render() {
         const demandes = this.state.demandes
         return (
             <div className="Demandes">
-                <p>Les dernières Demandes</p>
-
+                <h5>Les dernières Demandes</h5>
                 {demandes.filter(this.confirmedFilter).map((demande, index) =>
-                    <Demande key={index} demande={demande} confirmed={this.state.confirmed} />
+                    <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.isConfirmed} />
                 )
-                } {}
+                }
             </div>
         )
     }

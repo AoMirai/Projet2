@@ -1,7 +1,5 @@
-.TitreContact h1{
-    text-align: center;
-    border-style:solid;
-    border-color:black;
+.TitreContact {
+    font-family: 'Open Sans', sans-serif;
     margin-left:10%;
     margin-right:10%;
     margin-top:5%;

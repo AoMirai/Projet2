@@ -1,39 +1,29 @@
-.Form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 12px;
-    margin-left: 30px;
-    margin-right:30px;
-    border-width:1px;
-    border-style:solid;
-    border-color:black;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 5%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 12%;
+.FormContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #e5e8e8;
+  width: 80%;
+  padding: 2%;
+  margin-top: 5%;
+  font-family: "Josefin Sans";
+  font-size: 24px;
 }
 
-
-
-.Form .buton {
-    text-align: center;
-    color: blue
+.FormContact .forminput {
+  margin: 2%;
+  width: 75%;
 }
 
-.Form .formulairea {
-    padding-right: 62%;
-    
+.FormContact .btn {
+  background-color: #f0673d;
+  border: none;
+  width: 100px;
 }
 
-.Form .formulaireb {
-    padding-right: 46%;
-}
-
-.Form .formulairec {
-    padding-right: 23%;
+.FormContact .btn:hover {
+  transition: 500ms;
+  background-color: grey;
 }

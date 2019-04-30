@@ -23,11 +23,10 @@
 }
 
 .Navigation .link:hover {
-    color: rgba(0,0,0,.6);
+    opacity: 0.8;
 }
 .Navigation .active {
-    color: orange;
-    text-decoration: underline purple;
+    color: #f0673d;
 }
 
 .Navigation .dropdown-toggle {

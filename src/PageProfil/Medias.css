@@ -1,13 +1,11 @@
 .Medias {
-  justify-content : space-evenly;
+  display: flex;
+  justify-content : space-around;
+  align-items: center;
+  flex-wrap: wrap;
   flex-direction : column;
-  display : flex;
-  padding: 5% 0;
-}
-@media(min-width:768px){
-  .Medias{
-    flex-direction: row;
-    
-  }
-  
+  width: 100%; 
+  padding: 2%;
+  margin-top: 5%;
+  box-shadow:5px 6px 8px grey;
 }
