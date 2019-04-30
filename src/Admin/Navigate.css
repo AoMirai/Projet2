@@ -1,9 +1,14 @@
 .Navigate .link {
     padding: 5px;
+    font-size: 28px;
 }
 .Navigate a {
     color: inherit;
 }
 .Navigate .true {
     color: rgb(151, 23, 0);
+}
+.Navigate {
+    margin-top: 50px;
+    padding: 30px;
 }

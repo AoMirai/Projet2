@@ -1,13 +1,12 @@
 .Demande {
-  padding: 5px;
   width: 80vw;
-  border-bottom: black solid 1px;
-  padding: 10px;
+  border-bottom:2px solid rgb(90, 90, 90);
+  padding: 10px 40px;
 }
 
 .Demande img {
-  width: 20%;
-  height: 20%;
+  width: 200px;
+  height: 200px;
 }
 
 .Demande .banner, .Demande .descr-play{
@@ -16,14 +15,16 @@
   margin: 10px;
 }
 .Demande .banner {
-
   box-shadow:5px 6px 8px grey;
+  margin-bottom: 20px;
 }
+
 .Demande .buttons {
   margin: 10px;
   display: flex;
   justify-content: space-between;
 }
+
 .Demande .accepter {
   background-color: green;
   color : white;
@@ -41,5 +42,6 @@
 .Demande ul {
   list-style-type: none; 
   font-size: 32px;
+  margin: 0;
   
 }
