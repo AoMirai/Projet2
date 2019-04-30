@@ -41,7 +41,7 @@ class ContactA extends Component {
              
             </CardBody>
             <div >
-        <Button className="button-send" size="lg">Send</Button>{' '}
+        <Button className="button-send" size="lg">Envoyer</Button>{' '}
         </div>
           </Card>
         </Collapse>

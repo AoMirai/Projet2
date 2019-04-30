@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Artist from "./Artist";
+import './Artists.css'
 
 class Artists extends Component {
   render() {
