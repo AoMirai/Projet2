@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Demande from './Demande'
+import './Demandes.css'
 
 class Demandes extends Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class Demandes extends Component {
         const demandes = this.state.demandes
         return (
             <div className="Demandes">
-                <h5>Les dernières Demandes</h5>
+                <h4>Les dernières Demandes</h4>
                 {demandes.filter(this.confirmedFilter).map((demande, index) =>
                     <Demande key={index} demande={demande} supprProfil={this.supprProfil} isConfirmed={this.isConfirmed} />
                 )
