@@ -1,7 +1,16 @@
+@font-face{
+    font-family: "Problack";
+    src: local('/font/CodeProBlack.otf') format("truetype")
+  }
+
 .Bio {
     text-align: center;
     position: relative;
     margin: 0;
+}
+
+.Bio .h1 {
+    font-family: "Problack";
 }
 
 .Bio .text {
