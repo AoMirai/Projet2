@@ -31,5 +31,7 @@
 }
 
 .Artist .desc > h2 {
+    font-size: 20px;
+    font-family: "ProBlack";
     color: #DC143C;
 }
