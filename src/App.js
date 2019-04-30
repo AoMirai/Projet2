@@ -34,6 +34,7 @@ class App extends Component {
       price: 120,
       style: "",
       confirmed: [18, 19, 20, 21, 22, 23, 24, 25, 26, 31],
+      suppr:[],
     };
   }
 
@@ -115,6 +116,18 @@ class App extends Component {
     this.setState({ confirmed: [...this.state.confirmed, id] })
   }
 
+  isSuppr = (id) => {
+    this.setState({suppr: [...this.state.suppr, id]})
+  }
+  confirmedFilterSuppr = (message) => {
+    for (let i = 0; i < this.state.suppr.length; i++) {
+        if (message.id === this.state.suppr[i]) {
+            return false
+        }
+    }
+    return true
+}
+
   render() {
     return (
       <div className="App">
@@ -162,6 +175,8 @@ class App extends Component {
                   <Navigate />
                   <Route exact path="/admin" render={() => (
                     <AdminAcceuil 
+                      isSuppr={this.isSuppr}
+                      confirmedFilterSuppr={this.confirmedFilterSuppr}
                       isConfirmed={this.isConfirmed} 
                       confirmedFilter={this.confirmedFilter}/>)} />
                   <Route path="/admin/demandes" render={() => (
@@ -169,7 +184,11 @@ class App extends Component {
                       confirmed={this.state.confirmed}
                       isConfirmed={this.isConfirmed} 
                       confirmedFilter={this.confirmedFilter}/>)} />
-                  <Route path="/admin/messages" component={Messages} />
+                  <Route path="/admin/messages" render={() => (
+                    <Messages 
+                      suppr={this.state.suppr}
+                      isSuppr={this.isSuppr}
+                      confirmedFilterSuppr={this.confirmedFilterSuppr}/>)} />
                 </div>
               )}
             />

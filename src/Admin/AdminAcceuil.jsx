@@ -27,7 +27,11 @@ class AdminAcceuil extends Component {
             demandes={this.state.demandes} 
             isConfirmed={this.props.isConfirmed} 
             confirmedFilter={this.props.confirmedFilter} />
-            <Messages />
+            <Messages 
+            suppr={this.props.suppr}
+            isSuppr={this.props.isSuppr}
+            confirmedFilterSuppr={this.props.confirmedFilterSuppr}/>
+            />
          </div>
 
       )
