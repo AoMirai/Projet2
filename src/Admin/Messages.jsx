@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Message from './Message'
+import './Messages.css'
 
 const messages = [
     {
@@ -39,11 +40,11 @@ class Messages extends Component {
     render(){
         return(
             <div className="Messages">
-            <h5>Messages de contact</h5>
+
+            <h4>Messages de contact</h4>
             {messages.filter(this.props.confirmedFilterSuppr).map((message, index) =>
-                    <Message key={index} message={message} isSuppr={this.props.isSuppr}/>
-                )
-                }
+                    <Message key={index} message={message} isSuppr={this.props.isSuppr}/>)
+              }
             </div>
             
 
