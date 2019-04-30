@@ -30,8 +30,7 @@ export default class Navigation extends React.Component {
   }
   render() {
     return (
-      <div className= "Navigation">
-        <Navbar expand="md">
+        <Navbar expand="md" sticky="top" className="Navigation">
           <img src='image/lg.png'  className="Logo" alt ="logo"/>   
           <NavbarBrand href="/">Digg'n Share</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -67,7 +66,6 @@ export default class Navigation extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
     );
   }
 }
