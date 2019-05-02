@@ -9,7 +9,7 @@ import Prestaform1 from "./PrestaForm1/PrestaForm";
 import Prestaform2 from "./prestaform2/Prestaform2";
 import Index from "./Index/Index";
 import Profil from "./PageProfil/Profil";
-import AdminAcceuil from "./Admin/AdminAccueil";
+import AdminAccueil from "./Admin/AdminAccueil";
 import Interview from "./interview/Interview";
 
 import Navigate from "./Admin/Navigate";
