@@ -1,5 +1,5 @@
 import React, {Component} from 'react'; 
-import Planning from './Planning.jsx'
+import PlanningPrice from './Planning.jsx'
 import Playlist from './Playlist.jsx'
 import './Medias.css';
 
@@ -28,8 +28,8 @@ class Medias extends Component {
   render(){
     return(
     <div className="Medias">
-      <Playlist />
-    <Planning messages={messages}/>
+    <Playlist playlist={this.props.playlist} name={this.props.name}/>
+    <PlanningPrice messages={messages} price={this.props.price}/>
     </div>
     )
   }

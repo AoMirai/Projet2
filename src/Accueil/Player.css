@@ -1,0 +1,26 @@
+.Player {
+  padding: 5%;
+}
+
+.Player .video {
+  width: 100%;
+}
+
+.Player h2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bebas";
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  text-shadow: #c0c0c0 6px 0 0;
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .Player h2 {
+    display: none;
+  }
+}

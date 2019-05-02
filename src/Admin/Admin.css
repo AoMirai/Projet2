@@ -3,3 +3,7 @@
     justify-content: flex-start;
     flex-direction: row;
 }
+
+.Admin h2, .Admin h3, .Admin h4, .Admin h5 {
+    font-family: 'Josefin sans', sans-serif;
+}

@@ -1,9 +1,18 @@
 .Navigate .link {
     padding: 5px;
+    font-size: 28px;
 }
 .Navigate a {
     color: inherit;
+    font-family: 'Josefin sans', sans-serif;
+}
+.Navigate a:hover {
+    text-decoration: inherit;
 }
 .Navigate .true {
-    color: rgb(151, 23, 0);
+    color:#DC143C;
+}
+.Navigate {
+    margin-top: 50px;
+    padding: 30px;
 }

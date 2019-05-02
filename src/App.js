@@ -9,14 +9,13 @@ import Prestaform1 from "./PrestaForm1/PrestaForm";
 import Prestaform2 from "./prestaform2/Prestaform2";
 import Index from "./Index/Index";
 import Profil from "./PageProfil/Profil";
-import AdminAcceuil from "./Admin/AdminAcceuil";
+import AdminAccueil from "./Admin/AdminAccueil";
+import Interview from "./interview/Interview";
 
 import Navigate from "./Admin/Navigate";
 
-import Semaine from "./Admin/Semaine";
 import Demandes from "./Admin/Demandes";
-import Historique from "./Admin/Historique";
-import Signalements from "./Admin/Signalements";
+import Messages from "./Admin/Messages";
 
 import "./Admin/Admin.css";
 
@@ -33,7 +32,9 @@ class App extends Component {
       planning: "",
       playlist: "",
       price: 120,
-      style: ""
+      style: "",
+      confirmed: [18, 19, 20, 21, 22, 23, 24, 25, 26, 31],
+      suppr:[],
     };
   }
 
@@ -91,13 +92,49 @@ class App extends Component {
       });
   };
 
+
+  confirmedFilter = (demande) => {
+    for (let i = 0; i < this.state.confirmed.length; i++) {
+      if (demande.id === this.state.confirmed[i]) {
+        return false
+      }
+    }
+    return true
+
+  }
+
+  confirmedFilterInversed = (demande) => {
+    for (let i = 0; i < this.state.confirmed.length; i++) {
+      if (demande.id === this.state.confirmed[i]) {
+        return true
+      }
+    }
+    return false
+  }
+
+  isConfirmed = (id) => {
+    this.setState({ confirmed: [...this.state.confirmed, id] })
+  }
+
+  isSuppr = (id) => {
+    this.setState({suppr: [...this.state.suppr, id]})
+  }
+  confirmedFilterSuppr = (message) => {
+    for (let i = 0; i < this.state.suppr.length; i++) {
+        if (message.id === this.state.suppr[i]) {
+            return false
+        }
+    }
+    return true
+}
+
   render() {
     return (
       <div className="App">
         <BrowserRouter>
           <Navigation />
           <Switch>
-            <Route exact path="/" component={Accueil}/>
+            <Route exact path="/" component={Accueil} />
             <Route
               path="/newpresta/1"
               render={() => (
@@ -124,19 +161,34 @@ class App extends Component {
                 />
               )}
             />
-            <Route path="/profil/1" component={Profil} />
-            <Route path="/index" component={Index} />
+            <Route path="/profil/:id" component={Profil} />
+            <Route path="/index" render={() => (
+              <Index 
+                isConfirmed={this.isConfirmed} 
+                confirmedFilterInversed={this.confirmedFilterInversed}/>)} />
             <Route path="/pageContact" component={PageContact} />
+            <Route path="/interview" component={Interview} />
             <Route
               path="/admin"
               render={() => (
                 <div className="Admin">
                   <Navigate />
-                  <Route exact path="/admin" component={AdminAcceuil} />
-                  <Route path="/admin/semaine" component={Semaine} />
-                  <Route path="/admin/signalements" component={Signalements} />
-                  <Route path="/admin/demandes" component={Demandes} />
-                  <Route path="/admin/historique" component={Historique} />
+                  <Route exact path="/admin" render={() => (
+                    <AdminAccueil 
+                      isSuppr={this.isSuppr}
+                      confirmedFilterSuppr={this.confirmedFilterSuppr}
+                      isConfirmed={this.isConfirmed} 
+                      confirmedFilter={this.confirmedFilter}/>)} />
+                  <Route path="/admin/demandes" render={() => (
+                    <Demandes 
+                      confirmed={this.state.confirmed}
+                      isConfirmed={this.isConfirmed} 
+                      confirmedFilter={this.confirmedFilter}/>)} />
+                  <Route path="/admin/messages" render={() => (
+                    <Messages 
+                      suppr={this.state.suppr}
+                      isSuppr={this.isSuppr}
+                      confirmedFilterSuppr={this.confirmedFilterSuppr}/>)} />
                 </div>
               )}
             />

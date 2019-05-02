@@ -36,7 +36,10 @@ class Index extends Component {
         return (
             <div className="Index">
                 <Search text={this.state.text} change={this.onChangeSearch} />
-                <Artists artists={filteredArtists} />
+                <Artists 
+                    artists={filteredArtists} 
+                    isConfirmed={this.props.isConfirmed} 
+                    confirmedFilterInversed={this.props.confirmedFilterInversed}/>
             </div>
         )
     }

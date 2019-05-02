@@ -15,28 +15,22 @@ class Demande extends Component {
     this.setState(state => ({ collapse: !state.collapse }));
   }
 
-  supprProfil = () => {
+  nowIsConfirmed = () => {
     const id = this.props.demande.id
-    const config = {
-        method: "DELETE"
-      };
-    const url = "http://51.68.18.101:3002/diggnshare/api/recipients";
-fetch(url + '/' + id, config)
-.then(response => response.json());
-}
-isConfirmed = () => {
-  this.props.confirmed.push(this.props.demande.id)
-}
+    this.props.isConfirmed(id)
+
+  }
+  nowSupprProfil = () => {
+    const id = this.props.demande.id;
+    this.props.supprProfil(id)
+  }
+  
   render() {
     return (
 
       <div className="Demande" >
         <Collapse className="resume-button" onClick={this.toggle} isOpen={!this.state.collapse}>
-        <ul> 
-                <li>Groupe : {this.props.demande.name}</li> 
-             <li>Membre(s): {this.props.demande.member}</li> 
-             <li>Style : {this.props.demande.style}</li> 
-                </ul>
+        <div className="name">{this.props.demande.name}</div>
         </Collapse>
         <Collapse isOpen={this.state.collapse}>
           <div className="contenu-demande">
@@ -61,10 +55,14 @@ isConfirmed = () => {
             
               
             </div>
-            <iframe title={this.props.demande.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
+            {(this.props.demande.playlist).includes("<iframe") ? this.props.demande.playlist : 
+            this.props.demande.playlist !== "" 
+            ? <iframe title={this.props.demande.name} width="500" height="300" scrolling="no" frameborder="no" allow="autoplay" src={this.props.demande.playlist}></iframe>
+            :""
+          }
             <div className="buttons">
-              <button className="accepter" onClick={this.isConfirmed} >Accepter</button>
-              <button className="refuser" onClick={this.supprProfil}>Refuser</button>
+              <button className="accepter" onClick={this.nowIsConfirmed} >Accepter</button>
+              <button className="refuser" onClick={this.nowSupprProfil}>Refuser</button>
             </div>
           </div>
 

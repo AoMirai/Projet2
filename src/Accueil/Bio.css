@@ -1,8 +1,22 @@
 .Bio {
     text-align: center;
     position: relative;
-    margin-bottom: 15%; 
-    margin-top: 10%;
+    margin: 0;
+
+}
+
+.Bio h1 {
+    font-family: 'ProBlack', sans-serif;
+}
+
+.Bio p {
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.Bio .infos {
+    margin-bottom: 5%;
 }
 
 .Bio .text {
@@ -11,8 +25,7 @@
     color: white;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 50px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
 }
 
 .Bio > img {
@@ -20,4 +33,13 @@
     max-height: 900px;
     -webkit-filter: grayscale;
     filter: grayscale(100%);
+}
+
+.Bio .focus {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.Bio{
+    padding: 5%;
 }

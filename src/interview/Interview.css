@@ -1,0 +1,26 @@
+.Interview {
+    font-family: 'Josefin Sans';
+    padding: 5%;
+}
+
+.Interview img {
+    padding: 0;
+    border: solid 1.5px #DC143C;
+}
+
+.Interview p {
+    padding-bottom: 5%;
+}
+
+.Interview .text {
+text-align:center;
+margin-bottom:30px;
+}
+
+.Interview .text span {
+    color:black;
+    font-weight:bold;
+}
+
+
+

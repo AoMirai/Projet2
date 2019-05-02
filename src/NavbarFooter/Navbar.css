@@ -1,29 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.Navigation .navbar-brand {
-   font-family: 'Open Sans', sans-serif;
+.Navigation {
+    background-color: white !important;
 }
+
+.Navigation .navbar-brand {
+   font-family: 'ProBlack', sans-serif;
+   text-decoration: none;
+   letter-spacing: 3px;
+   color: #DC143C;
+}
+
+.Navigation .navbar-brand:hover {
+    color: #DC143C;
+ }
 
 .Navigation .ml-auto {
     font-family: 'Open Sans', sans-serif;
 }
 
 .Navigation .Logo {
-    width: 50px;
+    width: 75px;
     margin: 20px;
 }
 .Navigation .link {
-    color: rgba(0,0,0,.5);
+    color: black;
     text-decoration: none;
     display: block;
     padding: .5rem 1rem;
 }
 
 .Navigation .link:hover {
-    color: rgba(0,0,0,.6);
+    opacity: 0.8;
 }
 .Navigation .active {
-    color: orange;
-    text-decoration: underline purple;
+    color: #DC143C;
+}
+
+.Navigation .dropdown-toggle {
+    color: black !important;
 }
 
